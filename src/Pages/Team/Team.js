@@ -26,6 +26,34 @@ import Sarvin from "../../Assets/team/currenteam/sarvin.png";
 import Shreevesh from "../../Assets/shreevesh.png";
 import coreTeam from "../../Assets/updated_team.jpg";
 import updatedteam from "../../Assets/innotech1.png";
+import Rashi from "../../Assets/team/currenteam/Rashi.jpg";
+import Ishika from "../../Assets/team/currenteam/Ishika.jpeg";
+import Sarthak from "../../Assets/team/currenteam/Sarthak.jpg";
+import Gaurang from "../../Assets/team/currenteam/Gaurang.jpg";
+import Ankit from  "../../Assets/team/currenteam/Ankit.jpg";
+import Ashwani from "../../Assets/team/currenteam/Ashwani.jpg";
+import Rauniyar from "../../Assets/team/currenteam/Rauniyar.jpg";
+import Naimish from "../../Assets/team/currenteam/Naimish.jpg";
+import Ujjwal from "../../Assets/team/currenteam/Ujjwal.jpg";
+import Vartika from "../../Assets/team/currenteam/Vartika.jpg";
+import Akshat from "../../Assets/team/currenteam/Akshat.jpg";
+import Unnati from "../../Assets/team/currenteam/Unnati.jpg";
+import Raj from "../../Assets/team/currenteam/Raj.jpg";
+import Ronit from "../../Assets/team/currenteam/Ronit.jpg";
+import Prashant2 from "../../Assets/team/currenteam/Prashant2.jpg";
+import Rishabh from "../../Assets/team/currenteam/Rishabh.jpg";
+import Anas from "../../Assets/team/currenteam/Anas.png";
+import Priyanshi from "../../Assets/team/currenteam/Priyanshi.jpg";
+import Anshika from "../../Assets/team/currenteam/Anshika.jpg";
+import Yash from "../../Assets/team/currenteam/yash.jpg";
+import Saurabh from "../../Assets/team/currenteam/Saurabh.jpg";
+import Priyanshu from "../../Assets/team/currenteam/Priyanshu.jpg";
+import Harsh from "../../Assets/team/currenteam/Harsh.jpg";
+import Riya from "../../Assets/team/currenteam/Riya.jpg";
+
+
+
+
 
 const founderteam = [
   {
@@ -51,76 +79,132 @@ const founderteam = [
   },
 ];
 
-const current2025 = [
+const current2026 = [
   {
-    name: "Ananya Srivastava",
+    name: "Gaurang Agarwal",
     role: "President",
-    img: Ananya,
+    img: Gaurang,
   },
   {
-    name: "Pranshu Gupta",
+    name: "Ishika Tyagi",
     role: "Vice President",
-    img: Pranshu,
+    img: Ishika,
   },
   {
-    name: "Shreya Bhradwaj ",
+    name: "Rashi Gupta",
     role: "General Secretary",
-    img: shreya,
+    img: Rashi,
   },
   {
-    name: "Siddarth Yadav",
+    name: "Sarthak Srivastava",
     role: "Community manager",
-    img: Siddarth,
+    img: Sarthak,
   },
   {
-    name: "Nishika tyagi  ",
-    role: "Social Media Lead",
-    img: Nishika,
+    name: "Ankit Kumar",
+    role: "Management Lead",
+    img: Ankit,
   },
   {
-    name: "Shreevesh Kumar ",
-    role: "Web Lead",
-    img: Shreevesh,
+    name: "Ashwani Bhardwaj ",
+    role: "Co-Management Lead",
+    img: Ashwani,
   },
 
   {
-    name: "Ritik Bhatt",
-    role: "Android Lead",
-    img: Rithik,
+    name: "Aditya Rauniyar ",
+    role: "Co-Management Lead",
+    img: Rauniyar,
   },
   {
-    name: "Shreya punani",
-    role: "Cyber Lead",
-    img: Shreya,
+    name: "Akshat Shukla",
+    role: "Web Lead",
+    img: Akshat,
   },
   {
-    name: "Ashutosh Mishra ",
-    role: "ML Lead",
-    img: AshutoshMishra,
+    name: "Vartika Agrawal ",
+    role: "Web Coordinator",
+    img: Vartika,
   },
   {
-    name: "Sarvin srivastava",
-    role: "AR/VR Lead",
-    img: Sarvin,
+    name: "Unnati Gupta",
+    role: "Web Coordinator",
+    img: Unnati,
   },
-  {
-    name: "Sahil Panwar",
+    {
+    name: "Naimish Omar",
     role: "UI/UX Lead",
-    img: Sahil,
+    img: Naimish,
   },
   {
-    name: "Anoushka  ",
+    name: "Ujjwal Upadhyay",
+    role: "UI/UX Coordinator",
+    img: Ujjwal,
+  },
+  {
+    name: "Ronit Jain",
+    role: "AR/VR Lead",
+    img: Ronit,
+  },
+  {
+    name: "Raj Singh",
+    role: "AR/VR Coordinator",
+    img: Raj,
+  },
+  {
+    name: "Anas Ahmad",
+    role: "Cybersecurity Lead",
+    img: Anas,
+  },
+  {
+    name: "Rishabh Gupta",
+    role: "Cybersecurity Coordinator",
+    img: Rishabh,
+  },
+  {
+    name: "Prashant Kumar Jha",
+    role: "Cybersecurity Coordinator",
+    img: Prashant2,
+  },
+  {
+    name: "Priyanshi Govil ",
+    role: "DSA Lead",
+    img: Priyanshi,
+  },
+  {
+    name: "Saurabh Tripathi",
+    role: "DSA Coordinator",
+    img: Saurabh,
+  },
+  {
+    name: "Anshika Sanghal",
+    role: "Android Lead",
+    img: Anshika,
+  },
+  {
+    name: "Yash Jain",
+    role: "ML Lead",
+    img: Yash,
+  },
+  {
+    name: "Priyanshu Upadhyay",
+    role: "ML Coordinator",
+    img: Priyanshu,
+  },
+  {
+    name: "Harsh Singh ",
+    role: "Social Lead",
+    img: Harsh,
+  },
+  {
+    name: "Riya Gupta",
     role: "Content Lead",
-    img: Anoushka,
+    img: Riya,
   },
-  {
-    name: "Aditya Mohan ",
-    role: "CP/DSA Lead",
-    img: AdityaMohan,
-  },
+ 
 ];
 
-const current2026 = [
+const current2025 = [
   {
     name: "Ananya Srivastava",
     role: "President",
