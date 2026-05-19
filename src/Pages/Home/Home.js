@@ -62,7 +62,7 @@ const Home = () => {
               <button className={styles.join_btn}>Join Now</button>
             </a>
           </div>
-          <img src={discmap} className={styles.discmapimg} alt="illustartion" />
+          <img loading="lazy" decoding="async" src={discmap} className={styles.discmapimg} alt="illustartion" />
         </div>
       </div>
 

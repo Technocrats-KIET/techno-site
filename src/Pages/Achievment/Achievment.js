@@ -24,7 +24,7 @@ const Achievment = () => {
         >
           <div className={styles.cardTag}>HACKATHONS</div>
           <div className={styles.cardImageGrid}>
-            <img src={sih} alt="Hackathon" className={styles.gridImg} />
+            <img loading="lazy" decoding="async" src={sih} alt="Hackathon" className={styles.gridImg} />
           </div>
           <div className={styles.cardBody}>
             <h2 className={styles.cardTitle}>Hackathon Wins</h2>
@@ -47,7 +47,7 @@ const Achievment = () => {
         >
           <div className={styles.cardTag}>INTERNSHIPS</div>
           <div className={styles.cardImageGrid}>
-            <img
+            <img loading="lazy" decoding="async"
               src={abhinavintern}
               alt="Internship"
               className={styles.gridImg}

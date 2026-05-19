@@ -5,7 +5,7 @@ const AchivementCard = ({ title, image, description, link }) => {
   return (
     <div className={styles.eventCard}>
       <div className={styles.eventCardImageWrapper}>
-        <img src={image} alt={title} className={styles.eventCardImage} />
+        <img loading="lazy" decoding="async" src={image} alt={title} className={styles.eventCardImage} />
         <div className={styles.eventCardImageOverlay} />
       </div>
 

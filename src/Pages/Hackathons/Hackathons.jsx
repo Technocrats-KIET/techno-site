@@ -168,7 +168,7 @@ const AchievementCard = ({ title, image, description, link }) => {
   return (
     <div className={styles.achievementCard}>
       <div className={styles.achievementCardImageWrapper}>
-        <img src={image} alt={title} className={styles.achievementCardImage} />
+        <img loading="lazy" decoding="async" src={image} alt={title} className={styles.achievementCardImage} />
         <div className={styles.achievementCardImageOverlay} />
       </div>
       <div className={styles.achievementCardBody}>

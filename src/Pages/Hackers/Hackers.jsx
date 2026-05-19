@@ -166,13 +166,13 @@ const Hackers = () => {
               className="carousel-slide carousel-slide--side carousel-slide--left"
               onClick={prev}
             >
-              <img src={images[leftIndex]} alt={`slide-${leftIndex}`} />
+              <img loading="lazy" decoding="async" src={images[leftIndex]} alt={`slide-${leftIndex}`} />
               <div className="slide-overlay" />
             </div>
           )}
 
           <div className="carousel-slide carousel-slide--center">
-            <img src={images[activeIndex]} alt={`slide-${activeIndex}`} />
+            <img loading="lazy" decoding="async" src={images[activeIndex]} alt={`slide-${activeIndex}`} />
             <div className="carousel-dots">
               {images.map((_, i) => (
                 <button
@@ -190,7 +190,7 @@ const Hackers = () => {
               className="carousel-slide carousel-slide--side carousel-slide--right"
               onClick={next}
             >
-              <img src={images[rightIndex]} alt={`slide-${rightIndex}`} />
+              <img loading="lazy" decoding="async" src={images[rightIndex]} alt={`slide-${rightIndex}`} />
               <div className="slide-overlay" />
             </div>
           )}
