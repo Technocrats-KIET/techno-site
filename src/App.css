@@ -7,3 +7,14 @@
     background-size: 100%,100%;
     font-family: 'Nunito', sans-serif;
 }
+
+.page-loader {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.25rem;
+  opacity: 0.7;
+}

@@ -1,84 +1,42 @@
-import React from "react";
+import React, { lazy } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import Home from "./Pages/Home/Home";
-import Team from "./Pages/Team/Team";
-import Resource from "./Pages/Resource/Resource";
-import Event from "./Pages/EventPage/Event";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Aboutpage from "./Pages/About/Aboutpage";
-import Course from "./Pages/Courses/Course";
-import Hackers from "./Pages/Hackers/Hackers";
-import Videos from "./Pages/Videos/Videos";
-import Player from "./Pages/player/Player";
-import Register from "./Pages/Registration/Register";
-import Achievement from "./Pages/Achievment/Achievment";
-import Hackathons from "./Pages/Hackathons/Hackathons";
-import Internship from "./Pages/Internship/Internship";
+
+const Home = lazy(() => import("./Pages/Home/Home"));
+const Team = lazy(() => import("./Pages/Team/Team"));
+const Resource = lazy(() => import("./Pages/Resource/Resource"));
+const Event = lazy(() => import("./Pages/EventPage/Event"));
+const Aboutpage = lazy(() => import("./Pages/About/Aboutpage"));
+const Course = lazy(() => import("./Pages/Courses/Course"));
+const Hackers = lazy(() => import("./Pages/Hackers/Hackers"));
+const Videos = lazy(() => import("./Pages/Videos/Videos"));
+const Player = lazy(() => import("./Pages/player/Player"));
+const Register = lazy(() => import("./Pages/Registration/Register"));
+const Achievement = lazy(() => import("./Pages/Achievment/Achievment"));
+const Hackathons = lazy(() => import("./Pages/Hackathons/Hackathons"));
+const Internship = lazy(() => import("./Pages/Internship/Internship"));
 
 const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/about",
-        element: <Aboutpage />,
-      },
-      {
-        path: "/team",
-        element: <Team />,
-      },
-      {
-        path: "/event",
-        element: <Event />,
-      },
-      {
-        path: "/achievement",
-        element: <Achievement />,
-      },
-      {
-        path: "/hackers/:name",
-        element: <Hackers />,
-      },
-      {
-        path: "/register",
-        element: <Register />,
-      },
-
-      {
-        path: "/contact",
-        element: <contact />,
-      },
-      {
-        path: "/resource",
-        element: <Resource />,
-      },
-      {
-        path: "/course",
-        element: <Course />,
-      },
-      {
-        path: "/videos",
-        element: <Videos />,
-      },
-      {
-        path: "/video",
-        element: <Player />,
-      },
-      {
-        path: "/achievements/hackathons",
-        element: <Hackathons />,
-      },
-      {
-        path: "/achievements/internships",
-        element: <Internship />,
-      },
+      { path: "/", element: <Home /> },
+      { path: "/about", element: <Aboutpage /> },
+      { path: "/team", element: <Team /> },
+      { path: "/event", element: <Event /> },
+      { path: "/achievement", element: <Achievement /> },
+      { path: "/hackers/:name", element: <Hackers /> },
+      { path: "/register", element: <Register /> },
+      { path: "/contact", element: <contact /> },
+      { path: "/resource", element: <Resource /> },
+      { path: "/course", element: <Course /> },
+      { path: "/videos", element: <Videos /> },
+      { path: "/video", element: <Player /> },
+      { path: "/achievements/hackathons", element: <Hackathons /> },
+      { path: "/achievements/internships", element: <Internship /> },
     ],
   },
 ]);

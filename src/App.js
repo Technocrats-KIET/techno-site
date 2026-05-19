@@ -3,7 +3,7 @@ import { Toaster } from "react-hot-toast";
 import { Outlet } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 function App() {
   useEffect(() => {
     console.log(
@@ -26,7 +26,9 @@ function App() {
 
       <div className="container">
         <Header />
-        <Outlet />
+        <Suspense fallback={<div className="page-loader">Loading…</div>}>
+          <Outlet />
+        </Suspense>
         <Footer />
       </div>
     </>
