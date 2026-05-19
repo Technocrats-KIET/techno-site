@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./About.module.css";
-// import aboutIllustration from "../../Assets/home.png";
+// const aboutIllustration = "/assets/home.webp";
 const About = () => {
   return (
     <>

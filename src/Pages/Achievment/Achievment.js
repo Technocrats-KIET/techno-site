@@ -1,10 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import sih from "../../Assets/SIH.jpg";
-import abhinavintern from "../../Assets/abhinavintern.png";
-import dhruvintern from "../../Assets/dhruvintern.png";
-import sarvinnec from "../../Assets/sarviniec.jpg";
 import styles from "./Achievment.module.css";
+
+const sih = "/assets/SIH.webp";
+const abhinavintern = "/assets/abhinavintern.webp";
 
 const Achievment = () => {
   const navigate = useNavigate();
@@ -30,9 +29,10 @@ const Achievment = () => {
           <div className={styles.cardBody}>
             <h2 className={styles.cardTitle}>Hackathon Wins</h2>
             <p className={styles.cardDesc}>
-              From Smart India Hackathon to NASA Space Apps Challenge, our members have conquered 
-              prestigious national competitions, bringing home trophies and recognition across 
-              India's top technical institutions.
+              From Smart India Hackathon to NASA Space Apps Challenge, our
+              members have conquered prestigious national competitions, bringing
+              home trophies and recognition across India's top technical
+              institutions.
             </p>
             <div className={styles.cta}>
               Explore All Hackathons
@@ -47,14 +47,18 @@ const Achievment = () => {
         >
           <div className={styles.cardTag}>INTERNSHIPS</div>
           <div className={styles.cardImageGrid}>
-            <img src={abhinavintern} alt="Internship" className={styles.gridImg} />
+            <img
+              src={abhinavintern}
+              alt="Internship"
+              className={styles.gridImg}
+            />
           </div>
           <div className={styles.cardBody}>
             <h2 className={styles.cardTitle}>Industry Internships</h2>
             <p className={styles.cardDesc}>
-              Our members secure coveted positions at companies like NEC Corporation India, 
-              Ostello India Pvt Ltd, and TBI-KIET, turning academic passion into real-world 
-              product impact.
+              Our members secure coveted positions at companies like NEC
+              Corporation India, Ostello India Pvt Ltd, and TBI-KIET, turning
+              academic passion into real-world product impact.
             </p>
             <div className={styles.cta}>
               Explore All Internships

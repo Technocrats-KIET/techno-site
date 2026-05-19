@@ -1,8 +1,9 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import contactill from "../../Assets/contactill.png";
 import styles from "./Contact.module.css";
 import toast from "react-hot-toast";
+
+const contactill = "/assets/contactill.webp";
 
 const Contact = () => {
   const form = useRef();

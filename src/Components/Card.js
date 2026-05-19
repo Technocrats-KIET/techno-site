@@ -1,6 +1,6 @@
 import React from "react";
-import linkedin from "../Assets/linkedin.png";
-import insta from "../Assets/insta.png";
+const linkedin = "/assets/linkedin.webp";
+const insta = "/assets/insta.webp";
 
 const Card = ({ instagram, linkedin_link, name, image }) => {
   return (

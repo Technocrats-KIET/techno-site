@@ -2,17 +2,17 @@ import React from "react";
 import "./event.css";
 import DomainCard from "../../Components/Domaincard/Domaincard";
 import { Link } from "react-router-dom";
-import websitelaunch1 from "../../Assets/website-launch.jpg";
-import sangam1 from "../../Assets/sangam1.jpg";
-import techno1 from "../../Assets/techno1.jpg";
-import career1 from "../../Assets/careerguide1.jpg";
-import ing1 from "../../Assets/Inga1.jpg";
-import hackers1 from "../../Assets/hh1.jpg";
-import innotech1 from "../../Assets/Innotech1.JPG.jpeg";
-import technoverse1 from "../../Assets/technoverse1.jpeg";
-import foundationday from "../../Assets/foundation1.jpeg"
-import uiux1 from "../../Assets/uiux1.jpeg"
-import ml1 from "../../Assets/ml1.png"
+const websitelaunch1 = "/assets/website-launch.webp";
+const sangam1 = "/assets/sangam1.webp";
+const techno1 = "/assets/techno1.webp";
+const career1 = "/assets/careerguide1.webp";
+const ing1 = "/assets/Inga1.webp";
+const hackers1 = "/assets/hh1.webp";
+const innotech1 = "/assets/Innotech1.JPG.webp";
+const technoverse1 = "/assets/technoverse1.webp";
+const foundationday = "/assets/foundation1.webp";
+const uiux1 = "/assets/uiux1.webp";
+const ml1 = "/assets/ml1.webp";
 
 
 

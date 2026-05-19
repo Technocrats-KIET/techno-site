@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./Course.module.css";
 import CourseCard from "../../Components/CourseCard/CourseCard";
 import { Link, useSearchParams } from "react-router-dom";
-import node from "../../Assets/Courses/Web/node.png";
-import full from "../../Assets/Courses/Web/full.jpeg";
+const node = "/assets/Courses/Web/node.webp";
+const full = "/assets/Courses/Web/full.webp";
 const data = {
   Web: [
     {

@@ -1,7 +1,5 @@
 import React from 'react'
 import styles from "./Home.module.css"
-//  import homeIllustration from '../../Assets/frontill.png'
-import discmap from '../../Assets/disc.png'
 import About from '../About/About'
 import Domain from '../Domain/Domain'
 import Testimonial from '../Testimonials/Testimonial'
@@ -10,6 +8,10 @@ import Gallery from '../Gallery/Gallery'
 import Contact from '../Contact/Contact'
 import lottie from "lottie-web";
 import { useEffect,useRef } from 'react'
+
+//  const homeIllustration = "/assets/frontill.webp";
+const discmap = "/assets/disc.webp";
+
 const Home = () => {
   useEffect(() => {
     lottie.loadAnimation({

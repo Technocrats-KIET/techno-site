@@ -1,55 +1,52 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import "./Hackers.css";
-import websitelaunch1 from "../../Assets/website-launch.jpg";
-import websitelaunch2 from "../../Assets/websitelaunch2.jpg";
-import websitelaunch3 from "../../Assets/websitelaunch3.jpg";
-import websitelaunch4 from "../../Assets/websitelaunch4.jpg";
-import hackers1 from "../../Assets/hh1.jpg";
-import hackers2 from "../../Assets/hackersmeetup2.jpg";
-import hackers3 from "../../Assets/hackersmeetup3.jpg";
-import hackers4 from "../../Assets/hackersmeetup4.jpg";
-import hackers5 from "../../Assets/hackersmeetup5.jpg";
-import sangam1 from "../../Assets/sangam1.jpg";
-import sangam2 from "../../Assets/sangam2.jpg";
-import sangam3 from "../../Assets/sangam3.jpg";
-import sangam4 from "../../Assets/sangam4.jpg";
-import sangam5 from "../../Assets/sangam5.jpg";
-import techno1 from "../../Assets/techno1.jpg";
-import techno2 from "../../Assets/techno2.jpg";
-import techno3 from "../../Assets/techno3.jpg";
-import techno4 from "../../Assets/techno4.jpg";
-import techno5 from "../../Assets/techno5.jpg";
-import career1 from "../../Assets/careerguide1.jpg";
-import career2 from "../../Assets/careerguide2.jpg";
-import career3 from "../../Assets/careerguide3.jpg";
-import career4 from "../../Assets/careerguide4.jpg";
-import career5 from "../../Assets/careerguide5.jpg";
-import ing1 from "../../Assets/Inga1.jpg";
-import ing2 from "../../Assets/Inga2.jpg";
-import ing3 from "../../Assets/Inga3.jpg";
-import ing4 from "../../Assets/Inga4.jpg";
+const websitelaunch1 = "/assets/website-launch.webp";
+const websitelaunch2 = "/assets/websitelaunch2.webp";
+const websitelaunch3 = "/assets/websitelaunch3.webp";
+const websitelaunch4 = "/assets/websitelaunch4.webp";
+const hackers1 = "/assets/hh1.webp";
+const hackers2 = "/assets/hackersmeetup2.webp";
+const hackers3 = "/assets/hackersmeetup3.webp";
+const hackers4 = "/assets/hackersmeetup4.webp";
+const hackers5 = "/assets/hackersmeetup5.webp";
+const sangam1 = "/assets/sangam1.webp";
+const sangam2 = "/assets/sangam2.webp";
+const sangam3 = "/assets/sangam3.webp";
+const sangam4 = "/assets/sangam4.webp";
+const techno1 = "/assets/techno1.webp";
+const techno2 = "/assets/techno2.webp";
+const techno3 = "/assets/techno3.webp";
+const techno4 = "/assets/techno4.webp";
+const career1 = "/assets/careerguide1.webp";
+const career2 = "/assets/careerguide2.webp";
+const career3 = "/assets/careerguide3.webp";
+const career4 = "/assets/careerguide4.webp";
+const ing1 = "/assets/Inga1.webp";
+const ing2 = "/assets/Inga2.webp";
+const ing3 = "/assets/Inga3.webp";
+const ing4 = "/assets/Inga4.webp";
 
-import inno1 from "../../Assets/Innotech1.JPG.jpeg";
-import inno2 from "../../Assets/innotech2.jpeg";
-import inno3 from "../../Assets/innotech3.jpeg";
-import inno4 from "../../Assets/innotech4.jpeg";
+const inno1 = "/assets/Innotech1.JPG.webp";
+const inno2 = "/assets/innotech2.webp";
+const inno3 = "/assets/innotech3.webp";
+const inno4 = "/assets/innotech4.webp";
 
-import technoverse1 from "../../Assets/technoverse1.jpeg";
-import technoverse2 from "../../Assets/technoverse2.jpeg";
-import technoverse3 from "../../Assets/technoverse3.jpeg";
-import technoverse4 from "../../Assets/technoverse4.jpeg";
+const technoverse1 = "/assets/technoverse1.webp";
+const technoverse2 = "/assets/technoverse2.webp";
+const technoverse3 = "/assets/technoverse3.webp";
+const technoverse4 = "/assets/technoverse4.webp";
 
-import foundation1 from "../../Assets/foundation1.jpeg";
-import foundation2 from "../../Assets/foundation2.jpeg";
+const foundation1 = "/assets/foundation1.webp";
+const foundation2 = "/assets/foundation2.webp";
 
-import uiux1 from "../../Assets/uiux1.jpeg";
-import uiux2 from "../../Assets/uiux2.jpeg";
+const uiux1 = "/assets/uiux1.webp";
+const uiux2 = "/assets/uiux2.webp";
 
-import ml1 from "../../Assets/ml1.png";
-import ml2 from "../../Assets/ml2.jpeg";
-import ml3 from "../../Assets/ml3.jpeg";
-import ml4 from "../../Assets/ml4.jpeg";
+const ml1 = "/assets/ml1.webp";
+const ml2 = "/assets/ml2.webp";
+const ml3 = "/assets/ml3.webp";
+const ml4 = "/assets/ml4.webp";
 
 const data = [
   {
@@ -104,11 +101,11 @@ const data = [
       "Technoverse 2.0, organized by the Technocrats Club, was a dynamic technical event celebrating innovation and creativity. Featuring workshops, hackathons, and exhibitions, it provided students a platform to enhance their skills and explore emerging technologies. The event was honored by the presence of our esteemed Chief Guests, Anu Sharma and Harsh Vardhan Sharma, whose inspiring words motivated participants and made the event truly memorable.",
     images: [technoverse1, technoverse2, technoverse3, technoverse4],
   },
-   {
+  {
     name: "2nd foundation day",
     description:
       "The second foundation day of Technocrats Club was a special celebration of our club's journey and achievements. It was a day filled with memories, accomplishments, and the spirit of innovation that defines our club.",
-    images: [foundation1,foundation2],
+    images: [foundation1, foundation2],
   },
   {
     name: "UI/UX Bootcamp",
@@ -148,16 +145,27 @@ const Hackers = () => {
       <h1 className="event-title">{event.name}</h1>
 
       <div className="carousel-wrapper">
-        <button className="carousel-btn carousel-btn--left" onClick={prev} aria-label="Previous">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+        <button
+          className="carousel-btn carousel-btn--left"
+          onClick={prev}
+          aria-label="Previous"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.5"
+          >
             <polyline points="15 18 9 12 15 6" />
           </svg>
         </button>
 
         <div className="carousel-track">
-
           {total > 1 && (
-            <div className="carousel-slide carousel-slide--side carousel-slide--left" onClick={prev}>
+            <div
+              className="carousel-slide carousel-slide--side carousel-slide--left"
+              onClick={prev}
+            >
               <img src={images[leftIndex]} alt={`slide-${leftIndex}`} />
               <div className="slide-overlay" />
             </div>
@@ -178,15 +186,27 @@ const Hackers = () => {
           </div>
 
           {total > 2 && (
-            <div className="carousel-slide carousel-slide--side carousel-slide--right" onClick={next}>
+            <div
+              className="carousel-slide carousel-slide--side carousel-slide--right"
+              onClick={next}
+            >
               <img src={images[rightIndex]} alt={`slide-${rightIndex}`} />
               <div className="slide-overlay" />
             </div>
           )}
         </div>
 
-        <button className="carousel-btn carousel-btn--right" onClick={next} aria-label="Next">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+        <button
+          className="carousel-btn carousel-btn--right"
+          onClick={next}
+          aria-label="Next"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.5"
+          >
             <polyline points="9 18 15 12 9 6" />
           </svg>
         </button>

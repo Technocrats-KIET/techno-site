@@ -1,11 +1,13 @@
 import React from 'react'
 import styles from './Gallery.module.css'
-import glimpse1 from '../../Assets/glimpse/glimpse1.png'
-import glimpse2 from '../../Assets/glimpse/glimpse2.png'
-import glimpse3 from '../../Assets/glimpse/glimpse3.png'
-import glimpse4 from '../../Assets/glimpse/glimpse4.png'
-import glimpse5 from '../../Assets/glimpse/glimpse5.png'
 import Gallerycard from '../../Components/GalleryCard/Gallerycard'
+
+const glimpse1 = "/assets/glimpse/glimpse1.webp";
+const glimpse2 = "/assets/glimpse/glimpse2.webp";
+const glimpse3 = "/assets/glimpse/glimpse3.webp";
+const glimpse4 = "/assets/glimpse/glimpse4.webp";
+const glimpse5 = "/assets/glimpse/glimpse5.webp";
+
 const imgdata = [
   {
     name:"aryan",
