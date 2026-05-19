@@ -4,9 +4,6 @@ import { Link } from "react-router-dom";
 import { FcMenu } from "react-icons/fc";
 import { useEffect, useState } from "react";
 import { RxCross2 } from "react-icons/rx";
-import OnlineUsers from "../Countop";
-import PresenceTracker from "../Countop";
-import OnlineUserCount from "../Countpre";
 
 const clubIcon = "/common/clubIcon.webp";
 
@@ -139,9 +136,6 @@ const Header = () => {
       >
         <FcMenu size={30} />
       </div>
-
-     
-
     </div>
   );
 };

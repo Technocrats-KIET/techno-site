@@ -7,23 +7,3 @@
     background-size: 100%,100%;
     font-family: 'Nunito', sans-serif;
 }
-
-
-.livebanner {
-    position: absolute;
-    right: 0; /* Aligns it to the right side of the screen */
-    margin-top: 150px;
-    color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 0 0 8px 8px; /* Adjusted for rounded corners at the bottom */
-    z-index: 1000;
-    font-size: 16px;
-    transform: translateY(12px); /* Optional: you can adjust this or remove it if you want it flush */
-}
-
-/* If you want to style the header text */
-.livebanner h3 {
-    margin: 0;
-    font-weight: bold;
-    font-size: 14px;
-}
