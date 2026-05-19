@@ -3,7 +3,6 @@ import styles from "./Home.module.css";
 import About from "../About/About";
 import Domain from "../Domain/Domain";
 import Testimonial from "../Testimonials/Testimonial";
-import Teamsection from "../TeamSection/Teamsection";
 import Gallery from "../Gallery/Gallery";
 import Contact from "../Contact/Contact";
 import { useEffect, useRef } from "react";
@@ -62,7 +61,13 @@ const Home = () => {
               <button className={styles.join_btn}>Join Now</button>
             </a>
           </div>
-          <img loading="lazy" decoding="async" src={discmap} className={styles.discmapimg} alt="illustartion" />
+          <img
+            loading="lazy"
+            decoding="async"
+            src={discmap}
+            className={styles.discmapimg}
+            alt="illustartion"
+          />
         </div>
       </div>
 

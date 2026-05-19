@@ -17,6 +17,7 @@ const Register = lazy(() => import("./Pages/Registration/Register"));
 const Achievement = lazy(() => import("./Pages/Achievment/Achievment"));
 const Hackathons = lazy(() => import("./Pages/Hackathons/Hackathons"));
 const Internship = lazy(() => import("./Pages/Internship/Internship"));
+const Contact = lazy(() => import("./Pages/Contact/Contact"));
 
 const appRouter = createBrowserRouter([
   {
@@ -30,7 +31,7 @@ const appRouter = createBrowserRouter([
       { path: "/achievement", element: <Achievement /> },
       { path: "/hackers/:name", element: <Hackers /> },
       { path: "/register", element: <Register /> },
-      { path: "/contact", element: <contact /> },
+      { path: "/contact", element: <Contact /> },
       { path: "/resource", element: <Resource /> },
       { path: "/course", element: <Course /> },
       { path: "/videos", element: <Videos /> },

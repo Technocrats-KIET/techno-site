@@ -158,17 +158,16 @@ const data = {
     {
       name: "Figma Crash Course",
       img: "https://i.ytimg.com/vi/BOt3MNB71gI/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAMChmO3IQL0gfGfqQMQmD3Op08CQ",
-      id:"PLjiHFwhbHYlEmPhn68XdG2p2k4X47XR-8",
+      id: "PLjiHFwhbHYlEmPhn68XdG2p2k4X47XR-8",
       data: "A Figma crash course introduces beginners to the basics of UI/UX design, using Figma's cloud-based design tool. You'll learn how to create designs using frames, components, and vector tools, collaborate in real-time, and build responsive layouts. Key features like prototyping, design systems, and plugins help streamline the design process and bring ideas to life quickly and efficiently.",
     },
   ],
-  CPDSA:[
-
+  CPDSA: [
     {
       name: "STL in C++",
       img: "https://i.ytimg.com/vi/R5BEcvTVZj0/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCi95aJ9f21pngZ0Y8T-EQHYkH7AQ",
       id: "PLauivoElc3gh3RCiQA82MDI-gJfXQQVnn",
-      data: "STL in C++ is a powerful library that provides ready-to-use data structures (like vectors, stacks, maps, etc.) and algorithms (like sorting, searching, etc.), making it easier to implement efficient code. Understanding the components—containers, iterators, and algorithms—is crucial for leveraging STL effectively. It helps simplify complex operations, especially in competitive programming."
+      data: "STL in C++ is a powerful library that provides ready-to-use data structures (like vectors, stacks, maps, etc.) and algorithms (like sorting, searching, etc.), making it easier to implement efficient code. Understanding the components—containers, iterators, and algorithms—is crucial for leveraging STL effectively. It helps simplify complex operations, especially in competitive programming.",
     },
     {
       name: "C++ Programming - Striver",
@@ -181,7 +180,7 @@ const data = {
       img: "https://i.ytimg.com/vi/j8nAHeVKL08/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLC_BwiZmJ_tj2A5CM-xX3-4lcabVw",
       id: "PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL",
       data: "C++ is widely used in Data Structures and Algorithms (DSA) due to its speed and flexibility. Learning DSA in C++ involves mastering fundamental structures like arrays, linked lists, stacks, queues, and trees, alongside algorithms for sorting, searching, and graph traversal. Key concepts like time complexity (Big O) and memory management are crucial for solving problems efficiently.",
-    }
+    },
   ],
   Content: [
     {
@@ -189,11 +188,11 @@ const data = {
       img: "https://i.ytimg.com/vi/V1DOesbF5yE/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLD4mVtZQrJWpbMrd2Ss_a8XHGg2qw",
       id: "PL28eq_nhJTOerKxY3f9wFOB6eXBXZup-f",
       data: "Content writing focuses on creating informative and engaging text for various platforms, including blogs, websites, and social media. Beginners will learn about audience research, SEO principles, and writing styles that suit different formats. Key skills include crafting compelling headlines, structuring content for clarity, and using persuasive language to enhance engagement. Understanding editing and proofreading is also essential to produce polished and professional writing.",
-    }
-  ]
+    },
+  ],
 };
 const Course = () => {
-  const [params, setParams] = useSearchParams();
+  const [params] = useSearchParams();
   let coursedata = [];
   switch (params.get("c")) {
     case "Web":

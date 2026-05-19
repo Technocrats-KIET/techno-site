@@ -1,41 +1,70 @@
 import React from "react";
 import styles from "./Footer.module.css";
-import { FaInstagram, FaLinkedinIn,FaTwitter, FaPhone, FaEnvelope } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+  FaEnvelope,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className={styles.footer_wrapper}>
-
-
       <div className={styles.footer_container}>
+        <div className={styles.footer_links}>
+          <a href="/" className={styles.footer_link}>
+            Home
+          </a>
+          <a href="/about" className={styles.footer_link}>
+            About Us
+          </a>
+          <a href="/resource" className={styles.footer_link}>
+            Resource
+          </a>
 
-<div className={styles.footer_links}>
-  <a href="/" className={styles.footer_link}>Home</a>
-  <a href="/about" className={styles.footer_link}>About Us</a>
-  <a href="/resource" className={styles.footer_link}>Resource</a>
+          <div className={styles.footer_social}>
+            <a
+              href="https://www.instagram.com/technocrats.kiet/"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.social_icon}
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/technocrats-kiet/"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.social_icon}
+            >
+              <FaLinkedinIn />
+            </a>
+            <a
+              href="https://x.com/Technocrats_?t=lzevmiGsTKuZHYumdZkKIA&s=08"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.social_icon}
+            >
+              <FaTwitter />
+            </a>
+          </div>
+        </div>
 
-   <div className={styles.footer_social}>
-    <a href="https://www.instagram.com/technocrats.kiet/" target="_blank" rel="noreferrer" className={styles.social_icon}>
-      <FaInstagram />
-    </a>
-    <a href="https://www.linkedin.com/company/technocrats-kiet/" target="_blank" rel="noreferrer" className={styles.social_icon}>
-      <FaLinkedinIn />
-    </a>
-    <a href="https://x.com/Technocrats_?t=lzevmiGsTKuZHYumdZkKIA&s=08" target="_blank" rel="noreferrer" className={styles.social_icon}>
-      <FaTwitter />
-    </a>
-  </div>
-</div>
-
-<div className={styles.footer_links}>
-  <a href="/event" className={styles.footer_link}>Event</a>
-  <a href="/achievement" className={styles.footer_link}>Achievement</a>
-  <a href="/team" className={styles.footer_link}>Meet Our Team</a>
-  <a href="mailto:technocrats@kiet.edu" className={styles.contact_item}>
+        <div className={styles.footer_links}>
+          <a href="/event" className={styles.footer_link}>
+            Event
+          </a>
+          <a href="/achievement" className={styles.footer_link}>
+            Achievement
+          </a>
+          <a href="/team" className={styles.footer_link}>
+            Meet Our Team
+          </a>
+          <a href="mailto:technocrats@kiet.edu" className={styles.contact_item}>
             <FaEnvelope className={styles.contact_icon} />
             technocrats@kiet.edu
           </a>
-</div>
+        </div>
 
         <div className={styles.map_container}>
           <iframe
@@ -49,14 +78,12 @@ const Footer = () => {
             referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
-
       </div>
 
       <div className={styles.footer_bottom}>
         <span>© 2026 Technocrats</span>
         <span>Designed by Technocrats Tech Team</span>
       </div>
-
     </footer>
   );
 };
