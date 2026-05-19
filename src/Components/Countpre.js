@@ -2,7 +2,7 @@ import { db } from './Headcount';
 import { ref, onValue } from 'firebase/database';
 import { useEffect, useState } from 'react';
 import Style from './Count.module.css'
-const Liveicon = "/assets/Red_circle.webp";
+const Liveicon = "/common/Red_circle.webp";
 
 const OnlineUserCount = () => {
     const [userCount, setUserCount] = useState(0);

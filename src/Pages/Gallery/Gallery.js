@@ -2,11 +2,11 @@ import React from 'react'
 import styles from './Gallery.module.css'
 import Gallerycard from '../../Components/GalleryCard/Gallerycard'
 
-const glimpse1 = "/assets/glimpse/glimpse1.webp";
-const glimpse2 = "/assets/glimpse/glimpse2.webp";
-const glimpse3 = "/assets/glimpse/glimpse3.webp";
-const glimpse4 = "/assets/glimpse/glimpse4.webp";
-const glimpse5 = "/assets/glimpse/glimpse5.webp";
+const glimpse1 = "/Gallery/glimpse1.webp";
+const glimpse2 = "/Gallery/glimpse2.webp";
+const glimpse3 = "/Gallery/glimpse3.webp";
+const glimpse4 = "/Gallery/glimpse4.webp";
+const glimpse5 = "/Gallery/glimpse5.webp";
 
 const imgdata = [
   {

@@ -8,7 +8,7 @@ import OnlineUsers from "../Countop";
 import PresenceTracker from "../Countop";
 import OnlineUserCount from "../Countpre";
 
-const clubIcon = "/assets/clubIcon.webp";
+const clubIcon = "/common/clubIcon.webp";
 
 const Header = () => {
   const [Open, setOpen] = useState(false);

@@ -1,15 +1,15 @@
 import React from "react";
 import styles from "./Testimonial.module.css";
 import Testicard from "../../Components/Testicard/Testicard";
-const ayush = "/assets/team/ayush.webp";
-const Saumya = "/assets/team/saumya.webp";
-const anshul = "/assets/team/Aanshul.webp";
-const anuj = "/assets/team/anuj.webp";
-const anu = "/assets/AnuSharma.webp";
-const shreyansh = "/assets/shreyanshshukla.webp";
-const supriya = "/assets/SupriyaPurohit.webp";
-const harsh = "/assets/HarshVardhan.webp";
-const sanchay = "/assets/SanchaySingh.webp";
+const ayush = "/Testimonials/ayush.webp";
+const Saumya = "/Testimonials/saumya.webp";
+const anshul = "/Testimonials/Aanshul.webp";
+const anuj = "/Testimonials/anuj.webp";
+const anu = "/Testimonials/AnuSharma.webp";
+const shreyansh = "/Testimonials/shreyanshshukla.webp";
+const supriya = "/Testimonials/SupriyaPurohit.webp";
+const harsh = "/Testimonials/HarshVardhan.webp";
+const sanchay = "/Testimonials/SanchaySingh.webp";
 
 const data = [
   {

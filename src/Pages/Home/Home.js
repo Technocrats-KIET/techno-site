@@ -9,8 +9,8 @@ import Contact from '../Contact/Contact'
 import lottie from "lottie-web";
 import { useEffect,useRef } from 'react'
 
-//  const homeIllustration = "/assets/frontill.webp";
-const discmap = "/assets/disc.webp";
+//  const homeIllustration = "/Home/frontill.webp";
+const discmap = "/Home/disc.webp";
 
 const Home = () => {
   useEffect(() => {

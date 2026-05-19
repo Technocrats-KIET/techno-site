@@ -2,8 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./Achievment.module.css";
 
-const sih = "/assets/SIH.webp";
-const abhinavintern = "/assets/abhinavintern.webp";
+const sih = "/Achievements/SIH.webp";
+const abhinavintern = "/Achievements/abhinavintern.webp";
 
 const Achievment = () => {
   const navigate = useNavigate();

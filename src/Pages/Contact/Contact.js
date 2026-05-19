@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
 import toast from "react-hot-toast";
 
-const contactill = "/assets/contactill.webp";
+const contactill = "/Contact/contactill.webp";
 
 const Contact = () => {
   const form = useRef();

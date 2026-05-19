@@ -1,52 +1,52 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import "./Hackers.css";
-const websitelaunch1 = "/assets/website-launch.webp";
-const websitelaunch2 = "/assets/websitelaunch2.webp";
-const websitelaunch3 = "/assets/websitelaunch3.webp";
-const websitelaunch4 = "/assets/websitelaunch4.webp";
-const hackers1 = "/assets/hh1.webp";
-const hackers2 = "/assets/hackersmeetup2.webp";
-const hackers3 = "/assets/hackersmeetup3.webp";
-const hackers4 = "/assets/hackersmeetup4.webp";
-const hackers5 = "/assets/hackersmeetup5.webp";
-const sangam1 = "/assets/sangam1.webp";
-const sangam2 = "/assets/sangam2.webp";
-const sangam3 = "/assets/sangam3.webp";
-const sangam4 = "/assets/sangam4.webp";
-const techno1 = "/assets/techno1.webp";
-const techno2 = "/assets/techno2.webp";
-const techno3 = "/assets/techno3.webp";
-const techno4 = "/assets/techno4.webp";
-const career1 = "/assets/careerguide1.webp";
-const career2 = "/assets/careerguide2.webp";
-const career3 = "/assets/careerguide3.webp";
-const career4 = "/assets/careerguide4.webp";
-const ing1 = "/assets/Inga1.webp";
-const ing2 = "/assets/Inga2.webp";
-const ing3 = "/assets/Inga3.webp";
-const ing4 = "/assets/Inga4.webp";
+const websitelaunch1 = "/Events/website-launch.webp";
+const websitelaunch2 = "/Events/websitelaunch2.webp";
+const websitelaunch3 = "/Events/websitelaunch3.webp";
+const websitelaunch4 = "/Events/websitelaunch4.webp";
+const hackers1 = "/Events/hh1.webp";
+const hackers2 = "/Events/hackersmeetup2.webp";
+const hackers3 = "/Events/hackersmeetup3.webp";
+const hackers4 = "/Events/hackersmeetup4.webp";
+const hackers5 = "/Events/hackersmeetup5.webp";
+const sangam1 = "/Events/sangam1.webp";
+const sangam2 = "/Events/sangam2.webp";
+const sangam3 = "/Events/sangam3.webp";
+const sangam4 = "/Events/sangam4.webp";
+const techno1 = "/Events/techno1.webp";
+const techno2 = "/Events/techno2.webp";
+const techno3 = "/Events/techno3.webp";
+const techno4 = "/Events/techno4.webp";
+const career1 = "/Events/careerguide1.webp";
+const career2 = "/Events/careerguide2.webp";
+const career3 = "/Events/careerguide3.webp";
+const career4 = "/Events/careerguide4.webp";
+const ing1 = "/Events/Inga1.webp";
+const ing2 = "/Events/Inga2.webp";
+const ing3 = "/Events/Inga3.webp";
+const ing4 = "/Events/Inga4.webp";
 
-const inno1 = "/assets/Innotech1.JPG.webp";
-const inno2 = "/assets/innotech2.webp";
-const inno3 = "/assets/innotech3.webp";
-const inno4 = "/assets/innotech4.webp";
+const inno1 = "/Events/Innotech1.JPG.webp";
+const inno2 = "/Events/innotech2.webp";
+const inno3 = "/Events/innotech3.webp";
+const inno4 = "/Events/innotech4.webp";
 
-const technoverse1 = "/assets/technoverse1.webp";
-const technoverse2 = "/assets/technoverse2.webp";
-const technoverse3 = "/assets/technoverse3.webp";
-const technoverse4 = "/assets/technoverse4.webp";
+const technoverse1 = "/Events/technoverse1.webp";
+const technoverse2 = "/Events/technoverse2.webp";
+const technoverse3 = "/Events/technoverse3.webp";
+const technoverse4 = "/Events/technoverse4.webp";
 
-const foundation1 = "/assets/foundation1.webp";
-const foundation2 = "/assets/foundation2.webp";
+const foundation1 = "/Events/foundation1.webp";
+const foundation2 = "/Events/foundation2.webp";
 
-const uiux1 = "/assets/uiux1.webp";
-const uiux2 = "/assets/uiux2.webp";
+const uiux1 = "/Events/uiux1.webp";
+const uiux2 = "/Events/uiux2.webp";
 
-const ml1 = "/assets/ml1.webp";
-const ml2 = "/assets/ml2.webp";
-const ml3 = "/assets/ml3.webp";
-const ml4 = "/assets/ml4.webp";
+const ml1 = "/Events/ml1.webp";
+const ml2 = "/Events/ml2.webp";
+const ml3 = "/Events/ml3.webp";
+const ml4 = "/Events/ml4.webp";
 
 const data = [
   {

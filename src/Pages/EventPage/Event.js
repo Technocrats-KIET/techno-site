@@ -2,17 +2,17 @@ import React from "react";
 import "./event.css";
 import DomainCard from "../../Components/Domaincard/Domaincard";
 import { Link } from "react-router-dom";
-const websitelaunch1 = "/assets/website-launch.webp";
-const sangam1 = "/assets/sangam1.webp";
-const techno1 = "/assets/techno1.webp";
-const career1 = "/assets/careerguide1.webp";
-const ing1 = "/assets/Inga1.webp";
-const hackers1 = "/assets/hh1.webp";
-const innotech1 = "/assets/Innotech1.JPG.webp";
-const technoverse1 = "/assets/technoverse1.webp";
-const foundationday = "/assets/foundation1.webp";
-const uiux1 = "/assets/uiux1.webp";
-const ml1 = "/assets/ml1.webp";
+const websitelaunch1 = "/Events/website-launch.webp";
+const sangam1 = "/Events/sangam1.webp";
+const techno1 = "/Events/techno1.webp";
+const career1 = "/Events/careerguide1.webp";
+const ing1 = "/Events/Inga1.webp";
+const hackers1 = "/Events/hh1.webp";
+const innotech1 = "/Events/Innotech1.JPG.webp";
+const technoverse1 = "/Events/technoverse1.webp";
+const foundationday = "/Events/foundation1.webp";
+const uiux1 = "/Events/uiux1.webp";
+const ml1 = "/Events/ml1.webp";
 
 
 
