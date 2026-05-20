@@ -35,8 +35,6 @@ const Contact = () => {
         toastOptions={{ success: { theme: { primary: "#4aed88" } } }}
       />
       <img
-        width="541"
-        height="454"
         loading="lazy"
         decoding="async"
         className={styles.contill}

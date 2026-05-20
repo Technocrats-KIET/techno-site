@@ -4,8 +4,6 @@ const DomainCard = (props) => {
   return (
     <div className={styles.domain_card_wrapper}>
       <img
-        width="120"
-        height="120"
         loading="lazy"
         decoding="async"
         src={props.img}

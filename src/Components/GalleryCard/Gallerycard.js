@@ -4,8 +4,6 @@ const Gallerycard = (props) => {
   return (
     <div>
       <img
-        width="400"
-        height="250"
         loading="lazy"
         decoding="async"
         className={styles.imggall}

@@ -56,14 +56,12 @@ const Home = () => {
           <div>
             <div className={styles.disc_text_1}>Wanna join us?</div>
             <div className={styles.disc_text_2}>JOIN OUR</div>
-            <div className={styles.disc_text_2}>DISCORD, NOW!</div>
-            <a href="https://discord.gg/W8cVgj8x">
+            <div className={styles.disc_text_2}>COMMUNITY, NOW!</div>
+            <a href="https://chat.whatsapp.com/Gi9OoTWITrnCPd6URsgQFj">
               <button className={styles.join_btn}>Join Now</button>
             </a>
           </div>
           <img
-            width="554"
-            height="369"
             loading="lazy"
             decoding="async"
             src={discmap}
