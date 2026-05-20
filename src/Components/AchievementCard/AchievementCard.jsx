@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./AchivementCard.module.css";
+import styles from "./AchievementCard.module.css";
 
-const AchivementCard = ({ title, image, description, link }) => {
+const AchievementCard = ({ title, image, description, link }) => {
   return (
     <div className={styles.eventCard}>
       <div className={styles.eventCardImageWrapper}>
@@ -43,4 +43,4 @@ const AchivementCard = ({ title, image, description, link }) => {
   );
 };
 
-export default AchivementCard;
+export default AchievementCard;

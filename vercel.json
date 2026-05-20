@@ -1,4 +1,6 @@
 {
+  "buildCommand": "bun run build",
+  "outputDirectory": "dist",
   "headers": [
     {
       "source": "/(.*)\\.webp",
@@ -10,7 +12,7 @@
       ]
     },
     {
-      "source": "/static/(.*)",
+      "source": "/assets/(.*)",
       "headers": [
         {
           "key": "Cache-Control",

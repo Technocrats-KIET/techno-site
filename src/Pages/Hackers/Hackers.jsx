@@ -1,131 +1,13 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import "./Hackers.css";
-const websitelaunch1 = "/Events/website-launch.webp";
-const websitelaunch2 = "/Events/websitelaunch2.webp";
-const websitelaunch3 = "/Events/websitelaunch3.webp";
-const websitelaunch4 = "/Events/websitelaunch4.webp";
-const hackers1 = "/Events/hh1.webp";
-const hackers2 = "/Events/hackersmeetup2.webp";
-const hackers3 = "/Events/hackersmeetup3.webp";
-const hackers4 = "/Events/hackersmeetup4.webp";
-const hackers5 = "/Events/hackersmeetup5.webp";
-const sangam1 = "/Events/sangam1.webp";
-const sangam2 = "/Events/sangam2.webp";
-const sangam3 = "/Events/sangam3.webp";
-const sangam4 = "/Events/sangam4.webp";
-const techno1 = "/Events/techno1.webp";
-const techno2 = "/Events/techno2.webp";
-const techno3 = "/Events/techno3.webp";
-const techno4 = "/Events/techno4.webp";
-const career1 = "/Events/careerguide1.webp";
-const career2 = "/Events/careerguide2.webp";
-const career3 = "/Events/careerguide3.webp";
-const career4 = "/Events/careerguide4.webp";
-const ing1 = "/Events/Inga1.webp";
-const ing2 = "/Events/Inga2.webp";
-const ing3 = "/Events/Inga3.webp";
-const ing4 = "/Events/Inga4.webp";
-
-const inno1 = "/Events/Innotech1.JPG.webp";
-const inno2 = "/Events/innotech2.webp";
-const inno3 = "/Events/innotech3.webp";
-const inno4 = "/Events/innotech4.webp";
-
-const technoverse1 = "/Events/technoverse1.webp";
-const technoverse2 = "/Events/technoverse2.webp";
-const technoverse3 = "/Events/technoverse3.webp";
-const technoverse4 = "/Events/technoverse4.webp";
-
-const foundation1 = "/Events/foundation1.webp";
-const foundation2 = "/Events/foundation2.webp";
-
-const uiux1 = "/Events/uiux1.webp";
-const uiux2 = "/Events/uiux2.webp";
-
-const ml1 = "/Events/ml1.webp";
-const ml2 = "/Events/ml2.webp";
-const ml3 = "/Events/ml3.webp";
-const ml4 = "/Events/ml4.webp";
-
-const data = [
-  {
-    name: "Inauguration Ceremony",
-    description:
-      "We are excited to introduce TECHNOCRATS, a club that embodies the essence of opportunities and continuous learning at its core. Our vision is to become a premier platform that nurtures technological innovation, creativity, and leadership among the KIETians. On the momentous day of 18th July 2023, we officially launched our club, graced by the esteemed presence of our Director, our Dean of Academics, HOD CSIT, and our esteemed faculty members. We take pride in the valuable guidance provided by our industry mentors, who bring expertise from leading tech companies.",
-    images: [ing1, ing2, ing3, ing4],
-  },
-  {
-    name: "Technocrats Website",
-    description:
-      "On this day, we are thrilled to announce the launch of the Technocrats Club website! Our platform is dedicated to students passionate about web development, augmented reality, Android development, machine learning, and competitive programming. The website features a wealth of resources, including tutorials, project showcases, and a dedicated section for collaborative projects.",
-    images: [websitelaunch1, websitelaunch2, websitelaunch3, websitelaunch4],
-  },
-  {
-    name: "WEB 3 SANGAM",
-    description:
-      "Immerse yourself in the captivating world of Web 3.0 at the Web 3 Sangam event, exploring the latest trends and developments in the decentralized web. Whether you're a developer, investor, or simply curious about the future of the internet, this event is for you. Let's shape the future of Web 3.0 together!",
-    images: [sangam1, sangam2, sangam3, sangam4],
-  },
-  {
-    name: "Technoverse",
-    description:
-      "Reflecting on the inspiring Technoverse event on April 23rd, 2024! We hosted distinguished speakers who shared invaluable insights into technology. Akshay Saini, a web development expert, motivated us with quotes that have shaped his journey. Keerti Purswani emphasized the importance of communication skills in the tech industry. Supriya Purohit shared her personal journey, teaching us about perseverance and staying focused on goals despite adversity.",
-    images: [techno1, techno2, techno3, techno4],
-  },
-  {
-    name: "Career Guidance",
-    description:
-      "We are thrilled to spotlight Harveer Narwar, Shaiz Yousufzai, Radhika Gupta, and Panika Gupta, who have made a meaningful impact on young minds. Their recent visits to local schools aimed to inspire and educate students about the exciting world of technology. These visits were transformative, leaving lasting impressions on both the club members and students.",
-    images: [career1, career2, career3, career4],
-  },
-  {
-    name: "Inaugration",
-    images: [techno1, techno2, techno3, techno4],
-  },
-  {
-    name: "THE HACKER'S MEETUP",
-    description:
-      "Hackers Meet up can refer to various gatherings of hackers and cybersecurity enthusiasts. The most prominent one is The Hacker's Meetup, a series of monthly events in India focused on sharing knowledge and building community around vulnerability research, ethical hacking, and security awareness.",
-    images: [hackers1, hackers2, hackers3, hackers4, hackers5],
-  },
-  {
-    name: "Organised Innotech'25",
-    description:
-      "Innotech’25, the annual tech fest of our college organized by the Technocrats Club, was a dynamic celebration of innovation and learning. With workshops, hackathons, exhibitions, and inspiring guest talks, the event gave students a platform to showcase creativity, sharpen skills, and explore emerging technologies. It truly reflected the spirit of collaboration and positioned Technocrats as a hub of technical excellence on campus..",
-    images: [inno1, inno2, inno3, inno4],
-  },
-  {
-    name: "Technoverse 2.0",
-    description:
-      "Technoverse 2.0, organized by the Technocrats Club, was a dynamic technical event celebrating innovation and creativity. Featuring workshops, hackathons, and exhibitions, it provided students a platform to enhance their skills and explore emerging technologies. The event was honored by the presence of our esteemed Chief Guests, Anu Sharma and Harsh Vardhan Sharma, whose inspiring words motivated participants and made the event truly memorable.",
-    images: [technoverse1, technoverse2, technoverse3, technoverse4],
-  },
-  {
-    name: "2nd foundation day",
-    description:
-      "The second foundation day of Technocrats Club was a special celebration of our club's journey and achievements. It was a day filled with memories, accomplishments, and the spirit of innovation that defines our club.",
-    images: [foundation1, foundation2],
-  },
-  {
-    name: "UI/UX Bootcamp",
-    description:
-      "The UI/UX Bootcamp was an intensive workshop designed to introduce students to the fundamentals of user interface and user experience design. It provided hands-on training in design principles, prototyping, and usability testing, equipping participants with practical skills for creating engaging digital experiences.",
-    images: [uiux1, uiux2],
-  },
-  {
-    name: "Machine Learning Bootcamp",
-    description:
-      "The Machine Learning Bootcamp was an intensive workshop designed to introduce students to the fundamentals of machine learning. It provided hands-on training in data analysis, model building, and deployment, equipping participants with practical skills for creating intelligent applications.",
-    images: [ml1, ml2, ml3, ml4],
-  },
-];
+import { events } from "../../data/hackers";
 
 const Hackers = () => {
   const { name } = useParams();
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const event = data.find((event) => event.name === name);
+  const event = events.find((e) => e.name === name);
 
   if (!event) {
     return <div className="event-not-found">Event not found!</div>;

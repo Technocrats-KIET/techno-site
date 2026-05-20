@@ -1,7 +1,7 @@
 
 .container{
     background-color: #080108;
-  background-image: url('../public/common/Ellipse.webp'), url('../public/common/Ellipse30.webp');
+  background-image: url('/common/Ellipse.webp'), url('/common/Ellipse30.webp');
     background-repeat: no-repeat,no-repeat;
     background-position: top,bottom;
     background-size: 100%,100%;
