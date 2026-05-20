@@ -1,15 +1,17 @@
 import React from "react";
 import styles from "./Resource.module.css";
-import and from "../../Assets/android.png";
-import webd from "../../Assets/webdev.png";
-import cyber from "../../Assets/cybersecurity-card.png";
-import meta from "../../Assets/arvr.png";
-import graphic from "../../Assets/graphics.png";
-import ml from "../../Assets/ml.png";
 import Domaincard from "../../Components/Domaincard/Domaincard";
 import { Link } from "react-router-dom";
-import coding from "../../Assets/coding.png"
-import content from "../../Assets/cyber.png"
+
+const and = "/Domain/android.webp";
+const webd = "/Domain/webdev.webp";
+const cyber = "/Domain/cybersecurity-card.webp";
+const meta = "/Domain/arvr.webp";
+const graphic = "/Domain/graphics.webp";
+const ml = "/Domain/ml.webp";
+const coding = "/Domain/coding.webp";
+const content = "/Domain/cyber.webp";
+
 const data = [
   {
     name: "Web",

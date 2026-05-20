@@ -4,9 +4,9 @@
   align-items: center;
   margin-top: 15vh;
   padding: 10vw;
-  background-image: url("../../../public/Ellipse14.png"),
-    url("../../../public/bg1.png"), url("../../../public/bg2.png"),
-    url("../../../public/Ellipse14.png");
+  background-image: url("../../../public/common/Ellipse14.webp"),
+    url("../../../public/common/bg1.webp"), url("../../../public/common/bg2.webp"),
+    url("../../../public/common/Ellipse14.webp");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: left top, 15% -8%, 80% -15%, 90% 20%;
 }

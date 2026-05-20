@@ -1,8 +1,9 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import contactill from "../../Assets/contactill.png";
 import styles from "./Contact.module.css";
 import toast from "react-hot-toast";
+
+const contactill = "/Contact/contactill.webp";
 
 const Contact = () => {
   const form = useRef();
@@ -29,7 +30,7 @@ const Contact = () => {
   };
   return (
     <div className={styles.messcontainer}>
-      <img className={styles.contill} src={contactill} alt="illustration" />
+      <img loading="lazy" decoding="async" className={styles.contill} src={contactill} alt="illustration" />
       <div className={styles.input_container}>
         <div className={styles.testimonial_wrapper}>
           <div className={styles.bgname}> CALL</div>

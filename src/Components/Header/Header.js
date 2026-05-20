@@ -1,13 +1,11 @@
 import React from "react";
 import styles from "./header.module.css";
 import { Link } from "react-router-dom";
-import clubIcon from "../../Assets/clubIcon.png";
 import { FcMenu } from "react-icons/fc";
 import { useEffect, useState } from "react";
 import { RxCross2 } from "react-icons/rx";
-import OnlineUsers from "../Countop";
-import PresenceTracker from "../Countop";
-import OnlineUserCount from "../Countpre";
+
+const clubIcon = "/common/clubIcon.webp";
 
 const Header = () => {
   const [Open, setOpen] = useState(false);
@@ -45,7 +43,7 @@ const Header = () => {
 
   return (
     <div className={styles.nav_container}>
-      <img src={clubIcon} className={styles.club_icon_img} alt="logoicon"></img>
+      <img loading="lazy" decoding="async" src={clubIcon} className={styles.club_icon_img} alt="logoicon"></img>
 
       <div
         className={`${!Visible ? styles.link_container : styles.close_menu} ${
@@ -138,9 +136,6 @@ const Header = () => {
       >
         <FcMenu size={30} />
       </div>
-
-     
-
     </div>
   );
 };

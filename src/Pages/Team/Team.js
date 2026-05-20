@@ -2,54 +2,54 @@ import React from "react";
 import styles from "./Team.module.css";
 import Teamcard from "../../Components/TeamCard/Teamcard";
 // import teamsample from "../../Assets/team/team.JPG";
-import aryan from "../../Assets/team/aryan.png";
-import Prashant from "../../Assets/team/prashant.png";
-import raj from "../../Assets/team/raj.png";
-import garvit from "../../Assets/team/garvit.png";
-import veer from "../../Assets/team/narwar.png";
-import raunak from "../../Assets/team/raunak.png";
-import utlarsh from "../../Assets/team/utkarsh.png";
-import sanskriti from "../../Assets/team/vats.png";
-import tushar from "../../Assets/team/tushar.png";
-import AdityaMohan from "../../Assets/team/currenteam/aditya.png";
-import AshutoshMishra from "../../Assets/team/currenteam/ashutosh.png";
-import Ananya from "../../Assets/team/currenteam/ananya.png";
-import Pranshu from "../../Assets/team/currenteam/pranshu.png";
-import shreya from "../../Assets/team/currenteam/shruti.png";
-import Siddarth from "../../Assets/team/currenteam/sid.png";
-import Nishika from "../../Assets/team/currenteam/nishika.png";
-import Shreya from "../../Assets/team/currenteam/shreya.png";
-import Rithik from "../../Assets/team/currenteam/hrithik_android.png";
-import Sahil from "../../Assets/team/currenteam/sahil.png";
-import Anoushka from "../../Assets/team/currenteam/anushka.png";
-import Sarvin from "../../Assets/team/currenteam/sarvin.png";
-import Shreevesh from "../../Assets/shreevesh.png";
-import coreTeam from "../../Assets/updated_team.jpg";
-import updatedteam from "../../Assets/innotech1.png";
-import Rashi from "../../Assets/team/currenteam/Rashi.jpg";
-import Ishika from "../../Assets/team/currenteam/Ishika.jpeg";
-import Sarthak from "../../Assets/team/currenteam/Sarthak.jpg";
-import Gaurang from "../../Assets/team/currenteam/Gaurang.jpg";
-import Ankit from  "../../Assets/team/currenteam/Ankit.jpg";
-import Ashwani from "../../Assets/team/currenteam/Ashwani.jpg";
-import Rauniyar from "../../Assets/team/currenteam/Rauniyar.jpg";
-import Naimish from "../../Assets/team/currenteam/Naimish.jpg";
-import Ujjwal from "../../Assets/team/currenteam/Ujjwal.jpg";
-import Vartika from "../../Assets/team/currenteam/Vartika.jpg";
-import Akshat from "../../Assets/team/currenteam/Akshat.jpg";
-import Unnati from "../../Assets/team/currenteam/Unnati.jpg";
-import Raj from "../../Assets/team/currenteam/Raj.jpg";
-import Ronit from "../../Assets/team/currenteam/Ronit.jpg";
-import Prashant2 from "../../Assets/team/currenteam/Prashant2.jpg";
-import Rishabh from "../../Assets/team/currenteam/Rishabh.jpg";
-import Anas from "../../Assets/team/currenteam/Anas.png";
-import Priyanshi from "../../Assets/team/currenteam/Priyanshi.jpg";
-import Anshika from "../../Assets/team/currenteam/Anshika.jpg";
-import Yash from "../../Assets/team/currenteam/yash.jpg";
-import Saurabh from "../../Assets/team/currenteam/Saurabh.jpg";
-import Priyanshu from "../../Assets/team/currenteam/Priyanshu.jpg";
-import Harsh from "../../Assets/team/currenteam/Harsh.jpg";
-import Riya from "../../Assets/team/currenteam/Riya.jpg";
+const aryan = "/Team/2k24 core/aryan.webp";
+const Prashant = "/Team/founders/prashant.webp";
+const raj = "/Team/founders/raj.webp";
+const garvit = "/Team/2k24 core/garvit.webp";
+const veer = "/Team/founders/narwar.webp";
+const raunak = "/Team/2k24 core/raunak.webp";
+const utlarsh = "/Team/2k24 core/utkarsh.webp";
+const sanskriti = "/Team/founders/vats.webp";
+const tushar = "/Team/2k24 core/tushar.webp";
+const AdityaMohan = "/Team/2k25 core/aditya.webp";
+const AshutoshMishra = "/Team/2k25 core/ashutosh.webp";
+const Ananya = "/Team/2k25 core/ananya.webp";
+const Pranshu = "/Team/2k25 core/pranshu.webp";
+const shreya = "/Team/2k25 core/shruti.webp";
+const Siddarth = "/Team/2k25 core/sid.webp";
+const Nishika = "/Team/2k25 core/nishika.webp";
+const Shreya = "/Team/2k25 core/shreya.webp";
+const Rithik = "/Team/2k25 core/hrithik_android.webp";
+const Sahil = "/Team/2k25 core/sahil.webp";
+const Anoushka = "/Team/2k25 core/anushka.webp";
+const Sarvin = "/Team/2k25 core/sarvin.webp";
+const Shreevesh = "/Team/2k25 core/shreevesh.webp";
+const coreTeam = "/Team/updated_team.webp";
+const updatedteam = "/Team/innotech1.webp";
+const Rashi = "/Team/2k26 core/Rashi.webp";
+const Ishika = "/Team/2k26 core/Ishika.webp";
+const Sarthak = "/Team/2k26 core/Sarthak.webp";
+const Gaurang = "/Team/2k26 core/Gaurang.webp";
+const Ankit = "/Team/2k26 core/Ankit.webp";
+const Ashwani = "/Team/2k26 core/Ashwani.webp";
+const Rauniyar = "/Team/2k26 core/Rauniyar.webp";
+const Naimish = "/Team/2k26 core/Naimish.webp";
+const Ujjwal = "/Team/2k26 core/Ujjwal.webp";
+const Vartika = "/Team/2k26 core/Vartika.webp";
+const Akshat = "/Team/2k26 core/Akshat.webp";
+const Unnati = "/Team/2k26 core/Unnati.webp";
+const Raj = "/Team/2k26 core/Raj.webp";
+const Ronit = "/Team/2k26 core/Ronit.webp";
+const Prashant2 = "/Team/2k26 core/Prashant2.webp";
+const Rishabh = "/Team/2k26 core/Rishabh.webp";
+const Anas = "/Team/2k26 core/Anas.webp";
+const Priyanshi = "/Team/2k26 core/Priyanshi.webp";
+const Anshika = "/Team/2k26 core/Anshika.webp";
+const Yash = "/Team/2k26 core/yash.webp";
+const Saurabh = "/Team/2k26 core/Saurabh.webp";
+const Priyanshu = "/Team/2k26 core/Priyanshu.webp";
+const Harsh = "/Team/2k26 core/Harsh.webp";
+const Riya = "/Team/2k26 core/Riya.webp";
 
 
 
@@ -309,7 +309,7 @@ const Team = () => {
         The People who Drive <div>our Mission </div>{" "}
       </div>
       <div className={styles.mainimgdiv}>
-        <img className={styles.team_img} src={updatedteam} alt="illust" />
+        <img loading="lazy" decoding="async" className={styles.team_img} src={updatedteam} alt="illust" />
       </div>
       {/*core team of 2026*/ }
       <div className={styles.test_text}>Core Team 2026 </div>
@@ -343,7 +343,7 @@ const Team = () => {
         ))}
       </div>
       <div className={styles.mainimgdiv}>
-        <img className={styles.team_img} src={coreTeam} alt="illust" />
+        <img loading="lazy" decoding="async" className={styles.team_img} src={coreTeam} alt="illust" />
       </div>
     </div>
   );

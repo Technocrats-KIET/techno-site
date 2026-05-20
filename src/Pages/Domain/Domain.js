@@ -1,15 +1,15 @@
 import React from "react";
 import styles from "./Domain.module.css";
 import Domaincard from "../../Components/Domaincard/Domaincard";
-// import ml from '../../Assets/ml.jpg'
-import and from "../../Assets/android.png";
-import webd from "../../Assets/webdev.png";
-import cyber from "../../Assets/cybersecurity-card.png";
-import meta from "../../Assets/arvr.png";
-import graphic from "../../Assets/graphics.png";
-import ml from "../../Assets/ml.png";
-import coding from "../../Assets/coding.png"
-import content from "../../Assets/cyber.png"
+// const ml = "/Domain/ml.webp";
+const and = "/Domain/android.webp";
+const webd = "/Domain/webdev.webp";
+const cyber = "/Domain/cybersecurity-card.webp";
+const meta = "/Domain/arvr.webp";
+const graphic = "/Domain/graphics.webp";
+const ml = "/Domain/ml.webp";
+const coding = "/Domain/coding.webp";
+const content = "/Domain/cyber.webp";
 const data = [
   {
     name: "Web Development",

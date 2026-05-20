@@ -1,21 +1,22 @@
 import React from "react";
-import innotech from "../../Assets/innotech.jpg";
-import sih from "../../Assets/SIH.jpg";
-import nasaspaceapp from "../../Assets/nasaspaceapp.jpg";
-import techsamurai from "../../Assets/techsamurai.jpg";
-import ieee from "../../Assets/pranshuieee.jpg";
-import gsoc from "../../Assets/gsoc.jpg";
-import allahabadevent from "../../Assets/allahabadevents.jpg";
-import kodekombat from "../../Assets/kodekombat.jpg";
-import ideatex from "../../Assets/Idetatex.jpg";
-import nitpatna from "../../Assets/nitpatna.jpg";
-import sarvinnec from "../../Assets/sarviniec.jpg";
-import sidinnovation from "../../Assets/sidinnovationday.jpg";
-import BVCOE from "../../Assets/BVCOEhack.jpg";
-import kim from "../../Assets/kimquiz.jpg";
-import abhinavintern from "../../Assets/abhinavintern.png";
-import dhruvintern from "../../Assets/dhruvintern.png";
 import styles from "./Internship.module.css";
+
+const innotech = "/Achievements/innotech.webp";
+const sih = "/Achievements/SIH.webp";
+const nasaspaceapp = "/Achievements/nasaspaceapp.webp";
+const techsamurai = "/Achievements/techsamurai.webp";
+const ieee = "/Achievements/pranshuieee.webp";
+const gsoc = "/Achievements/gsoc.webp";
+const allahabadevent = "/Achievements/allahabadevents.webp";
+const kodekombat = "/Achievements/kodekombat.webp";
+const ideatex = "/Achievements/Idetatex.webp";
+const nitpatna = "/Achievements/nitpatna.webp";
+const sarvinnec = "/Achievements/sarviniec.webp";
+const sidinnovation = "/Achievements/sidinnovationday.webp";
+const BVCOE = "/Achievements/BVCOEhack.webp";
+const kim = "/Achievements/kimquiz.webp";
+const abhinavintern = "/Achievements/abhinavintern.webp";
+const dhruvintern = "/Achievements/dhruvintern.webp";
 
 const data = [
   {
@@ -167,7 +168,7 @@ const AchievementCard = ({ title, image, description, link }) => {
   return (
     <div className={styles.achievementCard}>
       <div className={styles.achievementCardImageWrapper}>
-        <img src={image} alt={title} className={styles.achievementCardImage} />
+        <img loading="lazy" decoding="async" src={image} alt={title} className={styles.achievementCardImage} />
         <div className={styles.achievementCardImageOverlay} />
       </div>
       <div className={styles.achievementCardBody}>
