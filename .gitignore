@@ -21,6 +21,10 @@ config.env
 .vscode/
 .idea/
 .env.local
+
+# tool artifacts
+.playwright-mcp/
+pagespeed-*.png
 .env.development.local
 .env.test.local
 .env.production.local

@@ -43,7 +43,7 @@ const Header = () => {
 
   return (
     <div className={styles.nav_container}>
-      <img loading="lazy" decoding="async" src={clubIcon} className={styles.club_icon_img} alt="logoicon"></img>
+      <img width="596" height="596" loading="lazy" decoding="async" src={clubIcon} className={styles.club_icon_img} alt="logoicon"></img>
 
       <div
         className={`${!Visible ? styles.link_container : styles.close_menu} ${

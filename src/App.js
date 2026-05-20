@@ -26,9 +26,11 @@ function App() {
 
       <div className="container">
         <Header />
-        <Suspense fallback={<div className="page-loader">Loading…</div>}>
-          <Outlet />
-        </Suspense>
+        <main>
+          <Suspense fallback={<div className="page-loader">Loading…</div>}>
+            <Outlet />
+          </Suspense>
+        </main>
         <Footer />
       </div>
     </>

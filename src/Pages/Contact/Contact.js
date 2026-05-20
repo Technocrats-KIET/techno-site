@@ -30,7 +30,7 @@ const Contact = () => {
   };
   return (
     <div className={styles.messcontainer}>
-      <img loading="lazy" decoding="async" className={styles.contill} src={contactill} alt="illustration" />
+      <img width="541" height="454" loading="lazy" decoding="async" className={styles.contill} src={contactill} alt="illustration" />
       <div className={styles.input_container}>
         <div className={styles.testimonial_wrapper}>
           <div className={styles.bgname}> CALL</div>
