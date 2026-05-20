@@ -28,6 +28,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
               className={styles.social_icon}
+              aria-label="Technocrats on Instagram"
             >
               <FaInstagram />
             </a>
@@ -36,6 +37,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
               className={styles.social_icon}
+              aria-label="Technocrats on LinkedIn"
             >
               <FaLinkedinIn />
             </a>
@@ -44,6 +46,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
               className={styles.social_icon}
+              aria-label="Technocrats on X / Twitter"
             >
               <FaTwitter />
             </a>

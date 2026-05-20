@@ -46,14 +46,14 @@
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
-  width: 100%; /* Ensure it takes full width */
-  padding: 0 20px; /* Add some padding to ensure there's no overflow */
-  box-sizing: border-box; /* Include padding in the element's total width */
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .dis_section {
   background: linear-gradient(165.33deg, #32165D -1.86%, #006699 150.26%);
-  width: 100%; /* Ensure the section takes full width */
+  width: 100%;
   max-width: 70vw;
   height: 40vh;
   border-radius: 10px;
@@ -61,7 +61,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 20px;
-  box-sizing: border-box; /* Include padding in the element's total width */
+  box-sizing: border-box;
 }
 
 .disc_text_1 {

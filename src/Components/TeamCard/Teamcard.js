@@ -1,8 +1,6 @@
 // import React from "react";
 // import styles from "./Teamcard.module.css";
 
-
-
 // const Teamcard = (props) => {
 //   return (
 //     <div className={styles.team_card_wrapper}>
@@ -21,7 +19,14 @@ const Teamcard = ({ name, role, img }) => {
   return (
     <div className={styles.card}>
       <div className={styles.imageWrapper}>
-        <img loading="lazy" decoding="async" src={img} alt={name} />
+        <img
+          width="240"
+          height="250"
+          loading="lazy"
+          decoding="async"
+          src={img}
+          alt={name}
+        />
       </div>
 
       <div className={styles.info}>

@@ -111,7 +111,8 @@ const data = [
     id: 11,
     title: "KIM online contest winner",
     image: kim,
-    description: "Winner of the KIM online quiz contest organized by Kirloskar Institute of Management.",
+    description:
+      "Winner of the KIM online quiz contest organized by Kirloskar Institute of Management.",
     link: "https://unstop.com/competitions/kirit-40-kirloskar-institute-of-management-kim-852976/online-quiz/285636",
   },
   {
@@ -168,14 +169,27 @@ const AchievementCard = ({ title, image, description, link }) => {
   return (
     <div className={styles.achievementCard}>
       <div className={styles.achievementCardImageWrapper}>
-        <img loading="lazy" decoding="async" src={image} alt={title} className={styles.achievementCardImage} />
+        <img
+          width="400"
+          height="300"
+          loading="lazy"
+          decoding="async"
+          src={image}
+          alt={title}
+          className={styles.achievementCardImage}
+        />
         <div className={styles.achievementCardImageOverlay} />
       </div>
       <div className={styles.achievementCardBody}>
         <h3 className={styles.achievementCardTitle}>{title}</h3>
         <p className={styles.achievementCardDescription}>{description}</p>
         {link && (
-          <a href={link} target="_blank" rel="noreferrer" className={styles.achievementCardBtn}>
+          <a
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+            className={styles.achievementCardBtn}
+          >
             View Post
             <ShareIcon />
           </a>

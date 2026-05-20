@@ -1,29 +1,37 @@
-import React from 'react'
-import styles from './Testicard.module.css'
+import React from "react";
+import styles from "./Testicard.module.css";
 
-import {  TiSocialLinkedin, TiSocialTwitter } from "react-icons/ti";
+import { TiSocialLinkedin, TiSocialTwitter } from "react-icons/ti";
 const Testicard = (props) => {
   return (
     <div className={styles.testcard_wrapper}>
-        <div style={{margin:"15px", display:"flex",gap:"20px"}}>
-        <img loading="lazy" decoding="async" className={styles.profile_img} alt="illustration" src={props.img}/>
+      <div style={{ margin: "15px", display: "flex", gap: "20px" }}>
+        <img
+          width="80"
+          height="80"
+          loading="lazy"
+          decoding="async"
+          className={styles.profile_img}
+          alt="illustration"
+          src={props.img}
+        />
         <div>
-        <div className={styles.testcrad_name}>{props.name}</div>
-      <div className={styles.testcard_role}>{props.role}</div>
-      <div className={styles.social_handles}>
-     <a href={props.linkedin}><TiSocialLinkedin style={{backgroundColor:"white"}}/></a> 
-     <a href={props.twitter}><TiSocialTwitter style={{backgroundColor:"white"}}/></a>
-      
+          <div className={styles.testcrad_name}>{props.name}</div>
+          <div className={styles.testcard_role}>{props.role}</div>
+          <div className={styles.social_handles}>
+            <a href={props.linkedin}>
+              <TiSocialLinkedin style={{ backgroundColor: "white" }} />
+            </a>
+            <a href={props.twitter}>
+              <TiSocialTwitter style={{ backgroundColor: "white" }} />
+            </a>
+          </div>
+        </div>
       </div>
-        </div>
-        </div>
-       
-   
+
       <div className={styles.testcard_desc}>{props.desc}</div>
-
-   
     </div>
-  )
-}
+  );
+};
 
-export default Testicard
+export default Testicard;

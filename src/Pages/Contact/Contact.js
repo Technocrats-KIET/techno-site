@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
-import toast from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 
 const contactill = "/Contact/contactill.webp";
 
@@ -15,7 +15,7 @@ const Contact = () => {
         "service_orrqs4s",
         "template_u5uyuyc",
         form.current,
-        "NyEm1FogELF5yOejs"
+        "NyEm1FogELF5yOejs",
       )
       .then(
         (result) => {
@@ -25,12 +25,22 @@ const Contact = () => {
         (error) => {
           toast.error("Message is not sent some error");
           console.log(error.text);
-        }
+        },
       );
   };
   return (
     <div className={styles.messcontainer}>
-      <img loading="lazy" decoding="async" className={styles.contill} src={contactill} alt="illustration" />
+      <Toaster
+        position="top-right"
+        toastOptions={{ success: { theme: { primary: "#4aed88" } } }}
+      />
+      <img
+        loading="lazy"
+        decoding="async"
+        className={styles.contill}
+        src={contactill}
+        alt="illustration"
+      />
       <div className={styles.input_container}>
         <div className={styles.testimonial_wrapper}>
           <div className={styles.bgname}> CALL</div>

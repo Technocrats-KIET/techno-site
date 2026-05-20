@@ -309,7 +309,7 @@ const Team = () => {
         The People who Drive <div>our Mission </div>{" "}
       </div>
       <div className={styles.mainimgdiv}>
-        <img loading="lazy" decoding="async" className={styles.team_img} src={updatedteam} alt="illust" />
+        <img width="917" height="437" loading="lazy" decoding="async" className={styles.team_img} src={updatedteam} alt="illust" />
       </div>
       {/*core team of 2026*/ }
       <div className={styles.test_text}>Core Team 2026 </div>
@@ -343,7 +343,7 @@ const Team = () => {
         ))}
       </div>
       <div className={styles.mainimgdiv}>
-        <img loading="lazy" decoding="async" className={styles.team_img} src={coreTeam} alt="illust" />
+        <img width="1280" height="511" loading="lazy" decoding="async" className={styles.team_img} src={coreTeam} alt="illust" />
       </div>
     </div>
   );
