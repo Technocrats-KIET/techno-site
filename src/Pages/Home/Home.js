@@ -7,6 +7,8 @@ import Gallery from "../Gallery/Gallery";
 import Contact from "../Contact/Contact";
 import { useEffect, useRef } from "react";
 
+const discmap = "/Home/disc.webp";
+
 const Home = () => {
   const container = useRef(null);
 
@@ -48,6 +50,28 @@ const Home = () => {
       <Testimonial />
       {/*<Teamsection/>*/}
       <Gallery />
+
+      <div className={styles.discordjoin_container}>
+        <div className={styles.dis_section}>
+          <div>
+            <div className={styles.disc_text_1}>Wanna join us?</div>
+            <div className={styles.disc_text_2}>JOIN OUR</div>
+            <div className={styles.disc_text_2}>DISCORD, NOW!</div>
+            <a href="https://discord.gg/W8cVgj8x">
+              <button className={styles.join_btn}>Join Now</button>
+            </a>
+          </div>
+          <img
+            width="554"
+            height="369"
+            loading="lazy"
+            decoding="async"
+            src={discmap}
+            className={styles.discmapimg}
+            alt="Discord illustration"
+          />
+        </div>
+      </div>
 
       <Contact />
     </div>
