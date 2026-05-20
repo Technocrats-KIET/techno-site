@@ -14,7 +14,7 @@ const Hackers = lazy(() => import("./Pages/Hackers/Hackers"));
 const Videos = lazy(() => import("./Pages/Videos/Videos"));
 const Player = lazy(() => import("./Pages/player/Player"));
 const Register = lazy(() => import("./Pages/Registration/Register"));
-const Achievement = lazy(() => import("./Pages/Achievment/Achievment"));
+const Achievement = lazy(() => import("./Pages/Achievement/Achievement"));
 const Hackathons = lazy(() => import("./Pages/Hackathons/Hackathons"));
 const Internship = lazy(() => import("./Pages/Internship/Internship"));
 const Contact = lazy(() => import("./Pages/Contact/Contact"));

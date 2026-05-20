@@ -1,21 +1,8 @@
-import React from "react";
-import styles from "./Testimonial.module.css";
-import Testicard from "../../Components/Testicard/Testicard";
-const ayush = "/Testimonials/ayush.webp";
-const Saumya = "/Testimonials/saumya.webp";
-const anshul = "/Testimonials/Aanshul.webp";
-const anuj = "/Testimonials/anuj.webp";
-const anu = "/Testimonials/AnuSharma.webp";
-const shreyansh = "/Testimonials/shreyanshshukla.webp";
-const supriya = "/Testimonials/SupriyaPurohit.webp";
-const harsh = "/Testimonials/HarshVardhan.webp";
-const sanchay = "/Testimonials/SanchaySingh.webp";
-
-const data = [
+export const testimonials = [
   {
     name: "Ayush Singh",
     role: "Senior Data Scientist",
-    img: ayush,
+    img: "/Testimonials/ayush.webp",
     desc: " I help data science learners grab high paying jobs and first pay checks | Experience at Replayed, ZenML, & Artifact",
     twitter: "https://x.com/AySh2218?t=h3YUEDp5mIcbKJQ6MWv2rQ&s=08",
     linkedin: "https://www.linkedin.com/in/ayush-singh488",
@@ -24,7 +11,7 @@ const data = [
   {
     name: "Saumya Singh",
     role: "Red Hat",
-    img: Saumya,
+    img: "/Testimonials/saumya.webp",
     desc: "Software Engineer helping you excel in Tech & Life | International Open Source Award finalist | Educator | Google Connect Winner'19 | Scholar GHCI'20 | Winner SIH, 21U21 Award",
     twitter: "https://x.com/saumya1singh?t=XUe5_gL1aSTyMwig7tR1Qg&s=08",
     linkedin: "https://www.linkedin.com/in/saumya1singh",
@@ -33,7 +20,7 @@ const data = [
   {
     name: "Aanshul Sadaria",
     role: "Google",
-    img: anshul,
+    img: "/Testimonials/Aanshul.webp",
     desc: "SWE III @ Google | Institute Gold Medalist @ IIITH | First Inventor @ Adobe | Ex-Researcher @ Precog | Mentored 1000+ Students | Speaker at 50+ Events",
     twitter: "https://x.com/AanshulSadaria?t=ZQ3J5Cs2_32Ev6t_sLdp3A&s=08",
     linkedin: "https://www.linkedin.com/in/aanshulsadaria",
@@ -41,7 +28,7 @@ const data = [
   {
     name: "Ajay Suneja",
     role: "Adidas",
-    img: anuj,
+    img: "/Testimonials/anuj.webp",
     desc: "Frontend Developer at @adidas | Ex- ITC Infotech | Ex- Coforge (NIIT) | GDSC’23 & Postman’23 Speaker ",
     twitter: "https://x.com/TechnicalSuneja?t=bxB7mCcPth0tJZZKvNkmOA&s=08",
     linkedin: "https://www.linkedin.com/in/ajaysuneja",
@@ -50,7 +37,7 @@ const data = [
   {
     name: "Anu Sharma",
     role: "Google, Twitter",
-    img: anu,
+    img: "/Testimonials/AnuSharma.webp",
     desc: "Worked @google, @twitter, @intuit • making tech and AI ridiculously simple •TEDx speaker • 500K+ community on social media • featured on NDTV, Times, Business Insider, Times Square",
     twitter: "https://x.com/O_Anu_O",
     linkedin: "https://www.linkedin.com/in/anu-sharma-2002/",
@@ -59,7 +46,7 @@ const data = [
   {
     name: "Supriya Purohit",
     role: "Flipkart",
-    img: supriya,
+    img: "/Testimonials/SupriyaPurohit.webp",
     desc: "Product & Tech | Ex-Flipkart & GoTo (Citrix)| Speaker at IITs/MIT/Amity/BIT | Product Management Cohort Instructor",
     twitter: "https://x.com/SupriyaPurohitt",
     linkedin: "https://www.linkedin.com/in/supriyapurohit27/",
@@ -68,7 +55,7 @@ const data = [
   {
     name: "Harsh Vandana Sharma",
     role: "Founder & CEO, Sheryians",
-    img: harsh,
+    img: "/Testimonials/HarshVardhan.webp",
     desc: "Founder & CEO, Sheryians",
     twitter: "https://x.com/harshbhaiyaa",
     linkedin: "https://www.linkedin.com/in/harshvandanasharma/",
@@ -77,46 +64,19 @@ const data = [
   {
     name: "Sanchay Singh",
     role: "Founder & CEO, Sheryians",
-    img: sanchay,
+    img: "/Testimonials/SanchaySingh.webp",
     desc: "Founder of HackersVilla & CyberSangam Community | Cybersecurity Expert | Corporate Trainer | Public Speaker",
     twitter: "https://x.com/OfficialSanchay",
     linkedin: "https://www.linkedin.com/in/sanchayofficial/",
     instagram: "",
   },
-
   {
     name: "Shreyansh Shukla",
     role: "Amazon",
-    img: shreyansh,
+    img: "/Testimonials/shreyanshshukla.webp",
     desc: "SDE @Amazon | Competitive Programmer",
     twitter: "",
     linkedin: "https://www.linkedin.com/in/shreyansh-shukla-38842b187/",
     instagram: "",
   },
 ];
-const Testimonial = () => {
-  return (
-    <div className={styles.testimonial_wrapper}>
-      <div className={styles.bgname}> SAY'S</div>
-      <div className={styles.test_text}>
-        Experience Our Excellence <div>Through Testimonials</div>{" "}
-      </div>
-      <div className={styles.testimonial_container}>
-        {data.map((e) => (
-          <Testicard
-            key={e.name}
-            desc={e.desc}
-            img={e.img}
-            role={e.role}
-            name={e.name}
-            linkedin={e.linkedin}
-            instagram={e.instagram}
-            twitter={e.twitter}
-          />
-        ))}
-      </div>
-    </div>
-  );
-};
-
-export default Testimonial;

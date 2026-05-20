@@ -1,153 +1,6 @@
 import React from "react";
 import styles from "./Internship.module.css";
-
-const innotech = "/Achievements/innotech.webp";
-const sih = "/Achievements/SIH.webp";
-const nasaspaceapp = "/Achievements/nasaspaceapp.webp";
-const techsamurai = "/Achievements/techsamurai.webp";
-const ieee = "/Achievements/pranshuieee.webp";
-const gsoc = "/Achievements/gsoc.webp";
-const allahabadevent = "/Achievements/allahabadevents.webp";
-const kodekombat = "/Achievements/kodekombat.webp";
-const ideatex = "/Achievements/Idetatex.webp";
-const nitpatna = "/Achievements/nitpatna.webp";
-const sarvinnec = "/Achievements/sarviniec.webp";
-const sidinnovation = "/Achievements/sidinnovationday.webp";
-const BVCOE = "/Achievements/BVCOEhack.webp";
-const kim = "/Achievements/kimquiz.webp";
-const abhinavintern = "/Achievements/abhinavintern.webp";
-const dhruvintern = "/Achievements/dhruvintern.webp";
-
-const data = [
-  {
-    id: 0,
-    title: "GSOC",
-    image: gsoc,
-    description:
-      "We are proud to announce that our talented, Parag Gupta , has been selected for the Google Summer of Code (GSoC) 2024 program in collaboration with The Palisadoes Foundation! 🚀 This achievement highlights Parag's exceptional skills, dedication, and expertise in the field.",
-    link: "https://www.linkedin.com/posts/technocrats-kiet_gsoc2024-palisadoesfoundation-congratulations-activity-7192412239918780416-S8yi?utm_source=share&utm_medium=member_desktop",
-  },
-  {
-    id: 1,
-    title: "SIH winner",
-    image: sih,
-    description:
-      "We are thrilled to announce that three brilliant minds from our club👾 - Akshat , Anant and Shraddha have successfully made it to the Grand Finale of the prestigious Smart India Hackathon (SIH'23) 🌐💻 ",
-    link: "https://www.linkedin.com/posts/technocrats-kiet_codingchampions-smartindiahackathon-grandfinale-activity-7141496738128744449-if5z?utm_source=share&utm_medium=member_desktop",
-  },
-  {
-    id: 2,
-    title: "Innotech winner",
-    image: innotech,
-    description:
-      "We are very happy to announce that our club members Anshika Gupta , Anoushka Goel , Harsh Verma has secured the 1st prize in Category Innovation Education & Skill Development at the INNOTECH 2023",
-    link: "https://www.linkedin.com/posts/technocrats-kiet_technocratstriumph-innotechwinners-teamkalakar-activity-7142185031585767424-1UxH?utm_source=share&utm_medium=member_desktop",
-  },
-  {
-    id: 3,
-    title: "NASA space apps challenge winner",
-    image: nasaspaceapp,
-    description:
-      "We are elated to share the incredible news of one of our members, Ritik Bhatt and his team 'ByteBuster' on having achieved a remarkable feat at this year's NASA Space Apps Challenge. Proud in his actions, the results emerged with his presentation marking for him to be the First Runner-Up!",
-    link: "https://www.linkedin.com/posts/technocrats-kiet_nasa-spaceappschallenge2k23-firstrunner-activity-7117823077727547392-PO0l?utm_source=share&utm_medium=member_desktop",
-  },
-  {
-    id: 4,
-    title: "IEEE winner",
-    image: ieee,
-    description:
-      "🏆 Exciting News! Thrilled to share that my Team Binary Bharat emerged as champions in the recent IEEE Council-organized hackathon at Manipal University Jaipur! ",
-    link: "https://www.linkedin.com/posts/pranshuandroiddev_hackathonchampions-teamworkmakesthedreamwork-activity-7124309655408758784-HDX-?utm_source=share&utm_medium=member_desktop",
-  },
-  {
-    id: 5,
-    title: "IIIT Allahabad hackathon winner",
-    image: allahabadevent,
-    description:
-      "We are happy to share that TECHNOCRATS MEMBERS have secured the FIRST position 🥇 at the prestigious Mahakumbh Hackathon held at IIIT Allahabad! A huge round of applause to Raunak Seth, Utkarsh Shukla , Aditya Mishra , and Manas Tripathi for their remarkable achievement.🎉",
-    link: "https://www.linkedin.com/posts/technocrats-kiet_hackathon-innovation-teamwork-activity-7201082584502525952-_ZiG?utm_source=share&utm_medium=member_desktop",
-  },
-  {
-    id: 6,
-    title: "KODE KOMBAT winner",
-    image: kodekombat,
-    description:
-      "🎉 Thrilled to announce that I emerged as a winner 🏆 in Kode Kombat 3.0 which is recently organized by Kinesis Technical Society 🎉The contest is totally based on Competitive programming including the major concepts of Data Structures and Algorithms.",
-    link: "https://www.linkedin.com/posts/archit-agarwal-8a47a2213_problemsolving-competitiveprogramming-dsa-activity-7198544862223241216-MfZO?utm_source=share&utm_medium=member_desktop",
-  },
-  {
-    id: 7,
-    title: "Ideatex winner",
-    image: ideatex,
-    description:
-      "🏆 Secured 2nd at @IDEATEX organized by @E-CELL KIET Group of Institutions and also got a chance to meet industry veterans like Parikh Jain and Mukesh Kumar Bansal , who have over a decade of experience.",
-    link: "https://www.linkedin.com/posts/wait-work_ideatex-ecell-innovation-activity-7134440901556224000-oDWe?utm_source=share&utm_medium=member_desktop",
-  },
-  {
-    id: 8,
-    title: "NIT Patna Hackathon winner",
-    image: nitpatna,
-    description:
-      "Celebrating a significant milestone achieved alongside Sarvin Shrivastava, Nayni Singhal and Chaitany Saini at Pitchtember, National Institute of Technology, Patna! Team Realityhex Secured 2nd place in our track and landed 3rd prize 🏆.",
-    link: "https://www.linkedin.com/posts/wait-work_pitchtembersuccess-nitpatnainnovation-milestoneunlocked-activity-7150678988489707521-jbMo?utm_source=share&utm_medium=member_desktop",
-  },
-  {
-    id: 9,
-    title: "INNOVATION Day winner",
-    image: sidinnovation,
-    description:
-      "Thrilled to announce that I and Anshika Chhabra secured the 1st prize in the Software category at the KIET Innovation Day Challenge, April 2024! 🎉 Our innovative idea has been recognized, and we couldn't be prouder of this achievement.",
-    link: "https://www.linkedin.com/posts/siddharth-yadav-1a3ab8255_innovation-teamwork-kietchallenge-activity-7205159217186435072-w1yu?utm_source=share&utm_medium=member_desktop",
-  },
-  {
-    id: 10,
-    title: "BVCOE Hackathon winner",
-    image: BVCOE,
-    description:
-      "I am thrilled to announce that our team has clinched the second runner-up position at the prestigious Hult Prize BVCOE Hackathon! 🌟 It was an incredible journey filled with innovation, collaboration, and dedication.",
-    link: "https://www.linkedin.com/posts/raj-singh-5222a5295_hultprize-bvcoe-hackathon-activity-7167849282341994496-jkWk?utm_source=share&utm_medium=member_desktop",
-  },
-  {
-    id: 11,
-    title: "KIM online contest winner",
-    image: kim,
-    description:
-      "Winner of the KIM online quiz contest organized by Kirloskar Institute of Management.",
-    link: "https://unstop.com/competitions/kirit-40-kirloskar-institute-of-management-kim-852976/online-quiz/285636",
-  },
-  {
-    id: 12,
-    title: "BVP Inc. Ideathon winner",
-    image: techsamurai,
-    description:
-      "Team Samurai from the Technocrats Club emerged victorious at the BVP Inc. Ideathon, claiming 1st runners-up! 🚀 Jiya Gupta, Raj Singh, Jhalak Jain, and Ashutosh Mishra showcased exceptional creativity and critical thinking.",
-    link: "",
-  },
-  {
-    id: 13,
-    title: "AR/VR Intern @NEC Corporation",
-    image: sarvinnec,
-    description:
-      "I am thrilled to announce that I have joined NEC Corporation India Pvt Ltd. as an intern. This is a fantastic opportunity for me to learn and grow in such a prestigious organization.",
-    link: "https://www.linkedin.com/posts/sarvin-shrivastava-493b20176_internship-neccorporationindia-careerjourney-activity-7211050452602273792-KLQU?utm_source=share&utm_medium=member_desktop",
-  },
-  {
-    id: 14,
-    title: "App Dev Intern @Business Incubator TBI-KIET",
-    image: abhinavintern,
-    description:
-      "Abhinav Singh is an Application Development Intern at TBI-KIET, focusing on leveraging Flutter to create user-friendly multi-platform applications tailored to startup needs.",
-    link: "https://www.linkedin.com/posts/sarvin-shrivastava-493b20176_internship-neccorporationindia-careerjourney-activity-7211050452602273792-KLQU?utm_source=share&utm_medium=member_desktop",
-  },
-  {
-    id: 15,
-    title: "Flutter Intern at @Ostello India Pvt Ltd",
-    image: dhruvintern,
-    description:
-      "Dhruv Sharma completed a Flutter Internship at Ostello India Pvt Ltd. He contributed to real-time feature development, optimized Dart code, integrated RESTful APIs, and ensured secure payment gateway setups.",
-    link: "https://www.linkedin.com/in/dhruv-sharma-a3a94a256/",
-  },
-];
+import { achievements } from "../../data/achievements";
 
 const ShareIcon = () => (
   <svg
@@ -165,56 +18,52 @@ const ShareIcon = () => (
   </svg>
 );
 
-const AchievementCard = ({ title, image, description, link }) => {
-  return (
-    <div className={styles.achievementCard}>
-      <div className={styles.achievementCardImageWrapper}>
-        <img
-          width="400"
-          height="300"
-          loading="lazy"
-          decoding="async"
-          src={image}
-          alt={title}
-          className={styles.achievementCardImage}
+const AchievementCard = ({ title, image, description, link }) => (
+  <div className={styles.achievementCard}>
+    <div className={styles.achievementCardImageWrapper}>
+      <img
+        width="400"
+        height="300"
+        loading="lazy"
+        decoding="async"
+        src={image}
+        alt={title}
+        className={styles.achievementCardImage}
+      />
+      <div className={styles.achievementCardImageOverlay} />
+    </div>
+    <div className={styles.achievementCardBody}>
+      <h3 className={styles.achievementCardTitle}>{title}</h3>
+      <p className={styles.achievementCardDescription}>{description}</p>
+      {link && (
+        <a
+          href={link}
+          target="_blank"
+          rel="noreferrer"
+          className={styles.achievementCardBtn}
+        >
+          View Post
+          <ShareIcon />
+        </a>
+      )}
+    </div>
+  </div>
+);
+
+const Internship = () => (
+  <div className={styles.achievementPage}>
+    <div className={styles.achievementGrid}>
+      {achievements.map((item) => (
+        <AchievementCard
+          key={item.id}
+          title={item.title}
+          image={item.image}
+          description={item.description}
+          link={item.link}
         />
-        <div className={styles.achievementCardImageOverlay} />
-      </div>
-      <div className={styles.achievementCardBody}>
-        <h3 className={styles.achievementCardTitle}>{title}</h3>
-        <p className={styles.achievementCardDescription}>{description}</p>
-        {link && (
-          <a
-            href={link}
-            target="_blank"
-            rel="noreferrer"
-            className={styles.achievementCardBtn}
-          >
-            View Post
-            <ShareIcon />
-          </a>
-        )}
-      </div>
+      ))}
     </div>
-  );
-};
+  </div>
+);
 
-const Achievment = () => {
-  return (
-    <div className={styles.achievementPage}>
-      <div className={styles.achievementGrid}>
-        {data.map((item, index) => (
-          <AchievementCard
-            key={index}
-            title={item.title}
-            image={item.image}
-            description={item.description}
-            link={item.link}
-          />
-        ))}
-      </div>
-    </div>
-  );
-};
-
-export default Achievment;
+export default Internship;
