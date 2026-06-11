@@ -98,6 +98,18 @@ export const events = [
     ],
   },
   {
+    name: "Technoverse 3.0",
+    description:
+      "Technoverse 3.0, organized by the Technocrats Club, was a dynamic celebration of innovation and creativity. With hands‑on workshops, high‑energy hackathons, and engaging exhibitions, the event offered students a powerful platform to sharpen their skills and explore cutting‑edge technologies. The presence of our esteemed Chief Guests, Anu Sharma and Harsh Vardhan Sharma, added great honor—their motivating words inspired participants and made Technoverse 3.0 a truly memorable experience.",
+      images:[
+        "/Events/technoverse3.0.webp",
+        "/Events/sanchit3.0.webp",
+        "/Events/sarthak3.0.webp",
+        "/Events/anjali3.0.webp",
+        "/Events/chandan3.0.webp",
+      ]
+  },
+  {
     name: "2nd foundation day",
     description:
       "The second foundation day of Technocrats Club was a special celebration of our club's journey and achievements. It was a day filled with memories, accomplishments, and the spirit of innovation that defines our club.",

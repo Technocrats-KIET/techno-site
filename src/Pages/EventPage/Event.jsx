@@ -13,13 +13,34 @@ const technoverse1 = "/Events/technoverse1.webp";
 const foundationday = "/Events/foundation1.webp";
 const uiux1 = "/Events/uiux1.webp";
 const ml1 = "/Events/ml1.webp";
-
+const technoverse3= "/Events/technoverse3.0.webp";
 
 
 const data = [
   {
     name:"Inauguration Ceremony",
     img:ing1,
+  },
+  {
+    name: "Technoverse 3.0",
+    img: technoverse3,
+  },
+  {
+    name:"Organised Innotech'25",
+    img:innotech1,
+  },
+  {
+    name:"Technoverse 2.0",
+    img:technoverse1,
+  },
+  {
+    name: "Technoverse",
+    addon: "date here ",
+    img: techno1,
+  },
+  {
+    name:"2nd foundation day",
+    img:foundationday,
   },
   {
     name: "Technocrats Website",
@@ -31,33 +52,17 @@ const data = [
     addon: "date here ",
     img: sangam1,
   },
-  {
-    name: "Technoverse",
-    addon: "date here ",
-    img: techno1,
-  },
+  
   {
     name: "Career Guidance",
     addon: "date here ",
     img: career1,
-  },
-  {
+  },  {
     name: "THE HACKER'S MEETUP",
     addon: "date here ",
     img: hackers1,
   },
-  {
-    name:"Organised Innotech'25",
-    img:innotech1,
-  },
-  {
-    name:"Technoverse 2.0",
-    img:technoverse1,
-  },
-  {
-    name:"2nd foundation day",
-    img:foundationday,
-  },
+  
   {
     name:"UI/UX Bootcamp",
     img:uiux1,
