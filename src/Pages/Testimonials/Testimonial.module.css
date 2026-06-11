@@ -43,6 +43,38 @@
   gap: 30px;
   justify-content: space-around;
   margin-top: 30vh;
+   max-width: 1400px;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.page_btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.page_btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.page_btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.page_info {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
 }
 
 @media only screen and (max-width: 425px) {
